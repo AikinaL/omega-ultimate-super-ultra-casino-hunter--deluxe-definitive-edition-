@@ -2,8 +2,8 @@ extends Control
 @onready var quitter = $Quitter
 var screensize = DisplayServer.screen_get_size()
 var random = RandomNumberGenerator.new()
-var randomX = random.randi_range(0, screensize.x)
-var randomY = random.randi_range(0, screensize.y)
+var randomX = random.randi_range(175, screensize.x - 175)
+var randomY = random.randi_range(45, screensize.y - 45)
 # Called when the node enters the scene tree for the first time.
 func _ready():
 	pass
@@ -57,6 +57,8 @@ func _on_niveaux_mouse_entered():
 func _on_high_score_mouse_entered():
 	$HighScore/AnimationPlayer.play("zoom_in_out")
 
+func _on_high_score_pressed():
+	get_tree().change_scene_to_file("res://scenes/high_score.tscn")
 
 #func _on_high_score_mouse_exited():
 	#$HighScore/AnimationPlayer.stop()
@@ -80,6 +82,8 @@ func _on_boutique_mouse_entered():
 func _on_chat_public_mouse_entered():
 	$ChatPublic/AnimationPlayer.play("zoom_in_out")
 
+func _on_chat_public_pressed():
+	get_tree().change_scene_to_file("res://scenes/chat_public.tscn")
 
 #func _on_chat_public_mouse_exited():
 	#$ChatPublic/AnimationPlayer.stop()
@@ -90,7 +94,8 @@ func _on_chat_public_mouse_entered():
 func _on_réseaux_mouse_entered():
 	$"Trivia/Réseaux/AnimationPlayer".play("rotate")
 
-
+func _on_réseaux_pressed():
+	get_tree().change_scene_to_file("res://scenes/reseauuux.tscn")
 #func _on_réseaux_mouse_exited():
 	#$"Trivia/Réseaux/AnimationPlayer".stop()
 #endregion
@@ -127,6 +132,8 @@ func _on_crédits_mouse_entered():
 func _on_bonus_mouse_entered():
 	$Trivia/Bonus/AnimationPlayer.play("rotate")
 
+func _on_bonus_pressed():
+	get_tree().change_scene_to_file("res://scenes/boonus.tscn")
 
 #func _on_bonus_mouse_exited():
 	#$Trivia/Bonus/AnimationPlayer.stop()
@@ -137,8 +144,8 @@ func _on_bonus_mouse_entered():
 func _on_quitter_pressed():
 	var parent_size = get_parent().size
 	var button_size = size 
-	randomX = randi_range(0, parent_size.x - button_size.x)
-	randomY = randi_range(0, parent_size.y - button_size.y)
+	randomX = random.randi_range(175, screensize.x - 175)
+	randomY = random.randi_range(45, screensize.y - 45)
 	quitter.global_position = Vector2(randomX, randomY)
 
 func _on_quitter_mouse_entered():

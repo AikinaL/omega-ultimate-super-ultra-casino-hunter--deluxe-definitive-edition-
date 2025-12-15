@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://b5s1jte8kw0o6"]
+
+[ext_resource type="Script" uid="uid://beya4yavv0lph" path="res://scripts/chat_public.gd" id="1_dkiko"]
+
+[node name="ChatPublic" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_dkiko")
+
+[node name="Retour" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -174.0
+offset_top = -46.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Retour"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "retour"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]

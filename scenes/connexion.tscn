@@ -1,0 +1,37 @@
+[gd_scene load_steps=2 format=3 uid="uid://cvfyp2cuewptm"]
+
+[ext_resource type="Script" uid="uid://cs8g2yaqob7cr" path="res://scripts/connexion.gd" id="1_g58tc"]
+
+[node name="Connexion" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_g58tc")
+
+[node name="Retour" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -174.0
+offset_top = -46.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Retour"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "retour"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
