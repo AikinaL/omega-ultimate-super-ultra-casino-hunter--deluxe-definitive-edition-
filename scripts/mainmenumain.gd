@@ -26,7 +26,7 @@ func _on_jouer_mouse_entered():
 
 #region Connexion
 func _on_connexion_pressed():
-	pass # Replace with function body.
+	get_tree().change_scene_to_file("res://scenes/connexion.tscn")
 
 func _on_connexion_mouse_entered():
 	$Connexion/AnimationPlayer.play("zoom_in_out")
