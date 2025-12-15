@@ -1,4 +1,4 @@
-[gd_scene load_steps=107 format=3 uid="uid://xsc3d7cn2aky"]
+[gd_scene load_steps=182 format=3 uid="uid://xsc3d7cn2aky"]
 
 [ext_resource type="Script" uid="uid://ecirqp1uuqi2" path="res://scripts/mainmenumain.gd" id="1_b7r8x"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_82get"]
@@ -98,6 +98,79 @@
 [ext_resource type="Texture2D" uid="uid://bvmub5w4bs1g7" path="res://assets/animation/image0094.png" id="96_dpbl4"]
 [ext_resource type="Texture2D" uid="uid://c14d2gor5api8" path="res://assets/animation/image0095.png" id="97_d0n5e"]
 [ext_resource type="Texture2D" uid="uid://bahq3ibkw84ij" path="res://assets/animation/image0096.png" id="98_gbxxn"]
+[ext_resource type="Texture2D" uid="uid://cjmaxp47nrja6" path="res://assets/Animation bouton 1/image0000.png" id="99_5va85"]
+[ext_resource type="Texture2D" uid="uid://bwdq5pnajhik8" path="res://assets/Animation bouton 2/image0000.png" id="99_amaqa"]
+[ext_resource type="Texture2D" uid="uid://cfgx8wcu02qw5" path="res://assets/Animation bouton 2/image0001.png" id="100_1w5yb"]
+[ext_resource type="Texture2D" uid="uid://mdgq7r4ve6lc" path="res://assets/Animation bouton 1/image0001.png" id="100_cgngg"]
+[ext_resource type="Texture2D" uid="uid://cynheti2ewhlv" path="res://assets/Animation bouton 2/image0002.png" id="101_ffkcq"]
+[ext_resource type="Texture2D" uid="uid://bhycquyyt3nh3" path="res://assets/Animation bouton 1/image0002.png" id="101_vmolx"]
+[ext_resource type="Texture2D" uid="uid://drk18dnixhw46" path="res://assets/Animation bouton 1/image0003.png" id="102_5qax7"]
+[ext_resource type="Texture2D" uid="uid://qxlw8s5jfyqn" path="res://assets/Animation bouton 2/image0003.png" id="102_rkirp"]
+[ext_resource type="Texture2D" uid="uid://cndkndo5cmqc8" path="res://assets/Animation bouton 1/image0004.png" id="103_b38ki"]
+[ext_resource type="Texture2D" uid="uid://cetd144xmv5mj" path="res://assets/Animation bouton 2/image0004.png" id="103_k8gj6"]
+[ext_resource type="Texture2D" uid="uid://48xf7xa0o8kh" path="res://assets/Animation bouton 1/image0005.png" id="104_2tgxf"]
+[ext_resource type="Texture2D" uid="uid://cnvn6cnnicn8n" path="res://assets/Animation bouton 2/image0005.png" id="104_7iedo"]
+[ext_resource type="Texture2D" uid="uid://bqjiojaeyyif8" path="res://assets/Animation bouton 1/image0006.png" id="105_enxjd"]
+[ext_resource type="Texture2D" uid="uid://bdb454ya83qc1" path="res://assets/Animation bouton 2/image0006.png" id="105_jgcvi"]
+[ext_resource type="Texture2D" uid="uid://dwiv123mwpqfr" path="res://assets/Animation bouton 2/image0007.png" id="106_d6exw"]
+[ext_resource type="Texture2D" uid="uid://bydfyfcc4i7op" path="res://assets/Animation bouton 1/image0007.png" id="106_damnq"]
+[ext_resource type="Texture2D" uid="uid://d31c7dv8qp2ti" path="res://assets/Animation bouton 2/image0008.png" id="107_08pg8"]
+[ext_resource type="Texture2D" uid="uid://go76syaod431" path="res://assets/Animation bouton 1/image0008.png" id="107_q0kg8"]
+[ext_resource type="Texture2D" uid="uid://dxghqqj1pmy1i" path="res://assets/Animation bouton 1/image0009.png" id="108_i4dxt"]
+[ext_resource type="Texture2D" uid="uid://dbtoeyl5ipu2n" path="res://assets/Animation bouton 2/image0009.png" id="108_mwfhe"]
+[ext_resource type="Texture2D" uid="uid://bv21i170abexh" path="res://assets/Animation bouton 2/image0010.png" id="109_c12mu"]
+[ext_resource type="Texture2D" uid="uid://cbmjhxuf1660n" path="res://assets/Animation bouton 1/image0010.png" id="109_jaqi4"]
+[ext_resource type="Texture2D" uid="uid://c4pcxftaegfnf" path="res://assets/Animation bouton 1/image0011.png" id="110_l1fu5"]
+[ext_resource type="Texture2D" uid="uid://dshity7kl5tx3" path="res://assets/Animation bouton 2/image0011.png" id="110_xbd81"]
+[ext_resource type="Texture2D" uid="uid://bwke3ddi1cgq3" path="res://assets/Animation bouton 2/image0012.png" id="111_gpjjy"]
+[ext_resource type="Texture2D" uid="uid://cd1evf7c5icdl" path="res://assets/Animation bouton 1/image0012.png" id="111_k7si7"]
+[ext_resource type="Texture2D" uid="uid://dohmjntdrxml" path="res://assets/Animation bouton 1/image0013.png" id="112_5m2vd"]
+[ext_resource type="Texture2D" uid="uid://c62wola0gbrao" path="res://assets/Animation bouton 2/image0013.png" id="112_l4yoa"]
+[ext_resource type="Texture2D" uid="uid://bm8opva7iuxq5" path="res://assets/Animation bouton 1/image0014.png" id="113_2n5mm"]
+[ext_resource type="Texture2D" uid="uid://b68k2rjfc0ssd" path="res://assets/Animation bouton 2/image0014.png" id="113_kxtte"]
+[ext_resource type="Texture2D" uid="uid://cdfwx5qiaxc2b" path="res://assets/Animation bouton 2/image0015.png" id="114_m133y"]
+[ext_resource type="Texture2D" uid="uid://boedgam0886e1" path="res://assets/Animation bouton 1/image0015.png" id="114_o4f0w"]
+[ext_resource type="Texture2D" uid="uid://cqr24yc54wj58" path="res://assets/Animation bouton 2/image0016.png" id="115_madj6"]
+[ext_resource type="Texture2D" uid="uid://msqhtvsknofj" path="res://assets/Animation bouton 1/image0016.png" id="115_soep3"]
+[ext_resource type="Texture2D" uid="uid://c4el5w2qoia5h" path="res://assets/Animation bouton 2/image0017.png" id="116_aiohv"]
+[ext_resource type="Texture2D" uid="uid://bs7auulwvyl7d" path="res://assets/Animation bouton 1/image0017.png" id="116_m18mr"]
+[ext_resource type="Texture2D" uid="uid://lsgoduo75yhb" path="res://assets/Animation bouton 1/image0018.png" id="117_dfs7t"]
+[ext_resource type="Texture2D" uid="uid://d022xxjgfgqo1" path="res://assets/Animation bouton 2/image0018.png" id="117_k1kjd"]
+[ext_resource type="Texture2D" uid="uid://c1tuk78dmdcjq" path="res://assets/Animation bouton 2/image0019.png" id="118_mm2sy"]
+[ext_resource type="Texture2D" uid="uid://31co4oka4wrx" path="res://assets/Animation bouton 1/image0019.png" id="118_mqfyt"]
+[ext_resource type="Texture2D" uid="uid://6dsp0r755pdr" path="res://assets/Animation bouton 2/image0020.png" id="119_iktl6"]
+[ext_resource type="Texture2D" uid="uid://cwugx4ydt3gv7" path="res://assets/Animation bouton 1/image0020.png" id="119_s2oko"]
+[ext_resource type="Texture2D" uid="uid://rihsjodsrpdr" path="res://assets/Animation bouton 1/image0021.png" id="120_wsnhu"]
+[ext_resource type="Texture2D" uid="uid://cm1l5pt6g6hwh" path="res://assets/Animation bouton 2/image0021.png" id="120_ypdvc"]
+[ext_resource type="Texture2D" uid="uid://bpa6616nlx6hn" path="res://assets/Animation bouton 1/image0022.png" id="121_da813"]
+[ext_resource type="Texture2D" uid="uid://ccst5vc44pk5l" path="res://assets/Animation bouton 2/image0022.png" id="121_pxfgx"]
+[ext_resource type="Texture2D" uid="uid://egwoddcpkcr2" path="res://assets/Animation bouton 2/image0023.png" id="122_h877v"]
+[ext_resource type="Texture2D" uid="uid://b2ak6m0k5li8i" path="res://assets/Animation bouton 1/image0023.png" id="122_vprue"]
+[ext_resource type="Texture2D" uid="uid://c6njy5jcboqrj" path="res://assets/Animation bouton 1/image0024.png" id="123_82get"]
+[ext_resource type="Texture2D" uid="uid://cq2xos3qhns4g" path="res://assets/Animation bouton 2/image0024.png" id="123_c2bia"]
+[ext_resource type="Texture2D" uid="uid://bd20hku3v634b" path="res://assets/Animation bouton 2/image0025.png" id="124_8tea2"]
+[ext_resource type="Texture2D" uid="uid://b3ts37hr3uwwe" path="res://assets/Animation bouton 1/image0025.png" id="124_l44fe"]
+[ext_resource type="Texture2D" uid="uid://bax4hrfsv7epb" path="res://assets/Animation bouton 1/image0026.png" id="125_mjern"]
+[ext_resource type="Texture2D" uid="uid://c230c0pr6iusx" path="res://assets/Animation bouton 2/image0026.png" id="125_x5lwx"]
+[ext_resource type="Texture2D" uid="uid://c385quuxq0kjx" path="res://assets/Animation bouton 2/image0027.png" id="126_b0wg4"]
+[ext_resource type="Texture2D" uid="uid://c0eax28ag6tsr" path="res://assets/Animation bouton 1/image0027.png" id="126_mddfc"]
+[ext_resource type="Texture2D" uid="uid://vyx266gw28qm" path="res://assets/Animation bouton 2/image0028.png" id="127_45a6w"]
+[ext_resource type="Texture2D" uid="uid://jexpo0nekbij" path="res://assets/Animation bouton 1/image0028.png" id="127_c4nr3"]
+[ext_resource type="Texture2D" uid="uid://cq63ogcfndyu2" path="res://assets/Animation bouton 1/image0029.png" id="128_6epwn"]
+[ext_resource type="Texture2D" uid="uid://chfeodwaejnbx" path="res://assets/Animation bouton 2/image0029.png" id="128_p6tu4"]
+[ext_resource type="Texture2D" uid="uid://dbk4awdpxe6kb" path="res://assets/Animation bouton 1/image0030.png" id="129_8lnat"]
+[ext_resource type="Texture2D" uid="uid://br86k3e7ilvgc" path="res://assets/Animation bouton 2/image0030.png" id="129_yh17t"]
+[ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="130_26vvh"]
+[ext_resource type="Texture2D" uid="uid://dlgq5l4n4y3uq" path="res://assets/Animation bouton 2/image0031.png" id="130_h4ndx"]
+[ext_resource type="Texture2D" uid="uid://ca2oyurokh3eo" path="res://assets/Animation bouton 2/image0032.png" id="131_fse61"]
+[ext_resource type="Texture2D" uid="uid://dfwaptwmw3fp0" path="res://assets/Animation bouton 2/image0033.png" id="132_1yy28"]
+[ext_resource type="Texture2D" uid="uid://c8kf4gdbl6eln" path="res://assets/Animation bouton 2/image0034.png" id="133_55c35"]
+[ext_resource type="Texture2D" uid="uid://cqphfdleg0mx7" path="res://assets/Animation bouton 2/image0035.png" id="134_v2x2y"]
+[ext_resource type="Texture2D" uid="uid://cj8tjdm4ruo8q" path="res://assets/Animation bouton 2/image0036.png" id="135_cytjj"]
+[ext_resource type="Texture2D" uid="uid://blgfoqor7gyyg" path="res://assets/Animation bouton 2/image0037.png" id="136_n51lc"]
+[ext_resource type="Texture2D" uid="uid://tswachr5ewju" path="res://assets/Animation bouton 2/image0038.png" id="137_g5eom"]
+[ext_resource type="Texture2D" uid="uid://ccnanb4pug8h2" path="res://assets/Animation bouton 2/image0039.png" id="138_qxa18"]
+[ext_resource type="Texture2D" uid="uid://dqqa8etch4q50" path="res://assets/Animation bouton 2/image0040.png" id="139_8sd7m"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xb0cx"]
 animations = [{
@@ -398,9 +471,6 @@ animations = [{
 "speed": 18.0
 }]
 
-[sub_resource type="SystemFont" id="SystemFont_cx6e3"]
-font_names = PackedStringArray("Le Casino Royale")
-
 [sub_resource type="Animation" id="Animation_cx6e3"]
 length = 0.001
 tracks/0/type = "value"
@@ -507,6 +577,241 @@ _data = {
 &"zoom_in_out": SubResource("Animation_b7r8x")
 }
 
+[sub_resource type="SpriteFrames" id="SpriteFrames_iq43j"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("99_amaqa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_1w5yb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ffkcq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_rkirp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_k8gj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_7iedo")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_jgcvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_d6exw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_08pg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_mwfhe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_c12mu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_xbd81")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_gpjjy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_l4yoa")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_kxtte")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_m133y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_madj6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_aiohv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_k1kjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_mm2sy")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_iktl6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_ypdvc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_pxfgx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_h877v")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_c2bia")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_8tea2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_x5lwx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_b0wg4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_45a6w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_p6tu4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_yh17t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("130_h4ndx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("131_fse61")
+}, {
+"duration": 1.0,
+"texture": ExtResource("132_1yy28")
+}, {
+"duration": 1.0,
+"texture": ExtResource("133_55c35")
+}, {
+"duration": 1.0,
+"texture": ExtResource("134_v2x2y")
+}, {
+"duration": 1.0,
+"texture": ExtResource("135_cytjj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("136_n51lc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("137_g5eom")
+}, {
+"duration": 1.0,
+"texture": ExtResource("138_qxa18")
+}, {
+"duration": 1.0,
+"texture": ExtResource("139_8sd7m")
+}],
+"loop": true,
+"name": &"default",
+"speed": 16.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_smc4w"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("99_5va85")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_cgngg")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_vmolx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_5qax7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_b38ki")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_2tgxf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_enxjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_damnq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_q0kg8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_i4dxt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_jaqi4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_l1fu5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("111_k7si7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("112_5m2vd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("113_2n5mm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("114_o4f0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("115_soep3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("116_m18mr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("117_dfs7t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("118_mqfyt")
+}, {
+"duration": 1.0,
+"texture": ExtResource("119_s2oko")
+}, {
+"duration": 1.0,
+"texture": ExtResource("120_wsnhu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("121_da813")
+}, {
+"duration": 1.0,
+"texture": ExtResource("122_vprue")
+}, {
+"duration": 1.0,
+"texture": ExtResource("123_82get")
+}, {
+"duration": 1.0,
+"texture": ExtResource("124_l44fe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("125_mjern")
+}, {
+"duration": 1.0,
+"texture": ExtResource("126_mddfc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("127_c4nr3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("128_6epwn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("129_8lnat")
+}],
+"loop": true,
+"name": &"animhihi",
+"speed": 16.0
+}]
+
+[sub_resource type="SystemFont" id="SystemFont_cx6e3"]
+font_names = PackedStringArray("Le Casino Royale")
+
 [sub_resource type="SystemFont" id="SystemFont_b7r8x"]
 font_names = PackedStringArray("Le Casino Royale")
 
@@ -519,7 +824,7 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b7r8x")
 
-[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+[node name="Background" type="AnimatedSprite2D" parent="."]
 position = Vector2(800, 450.00003)
 scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_xb0cx")
@@ -541,11 +846,36 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Jouer"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Jouer"]
+position = Vector2(87.5, 21)
+scale = Vector2(0.045052085, 0.03)
+sprite_frames = SubResource("SpriteFrames_iq43j")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Jouer"]
+position = Vector2(88.069336, 21)
+scale = Vector2(0.045797255, 0.030555556)
+sprite_frames = SubResource("SpriteFrames_smc4w")
+animation = &"animhihi"
+autoplay = "animhihi"
+
+[node name="CadreBouton" type="Sprite2D" parent="Jouer"]
+position = Vector2(88, 21)
+scale = Vector2(0.046249997, 0.030833332)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Jouer"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -1.5
+offset_bottom = 1.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = SubResource("SystemFont_cx6e3")
@@ -553,11 +883,6 @@ theme_override_font_sizes/font_size = 46
 text = "jouer"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Jouer"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Connexion" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
