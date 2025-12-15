@@ -1,0 +1,114 @@
+[gd_scene load_steps=2 format=3 uid="uid://ch651nxn84o8w"]
+
+[ext_resource type="Script" uid="uid://db7ffwabm5lwt" path="res://scripts/créditscréditables.gd" id="1_1urvc"]
+
+[node name="Créditscréditables" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("1_1urvc")
+
+[node name="Retour" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -174.0
+offset_top = -46.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="Label" type="Label" parent="Retour"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "retour"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="lesgenscool" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_top = -8.0
+offset_bottom = -8.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Moi" type="Label" parent="lesgenscool"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -128.0
+offset_top = -107.5
+offset_right = 128.0
+offset_bottom = -84.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Loubier Aaliyah - Game Designer, Programmation"
+
+[node name="Marine" type="Label" parent="lesgenscool"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -70.0
+offset_top = -67.5
+offset_right = 70.0
+offset_bottom = -44.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Vialle Marine - Game Designer, 3D "
+
+[node name="Tona" type="Label" parent="lesgenscool"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -117.5
+offset_top = -27.5
+offset_right = 117.5
+offset_bottom = -4.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Monterde Tona - Game Designer, Musique, SFX"
+
+[node name="Jami" type="Label" parent="lesgenscool"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -117.5
+offset_top = 12.5
+offset_right = 117.5
+offset_bottom = 35.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Grasseler Jami - Game Designer, Interfaces, Décor 2D, Artiste"
+
+[node name="Tristan" type="Label" parent="lesgenscool"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -158.5
+offset_top = 52.5
+offset_right = 158.5
+offset_bottom = 75.5
+grow_horizontal = 2
+grow_vertical = 2
+text = "Derthezene Tristan - Game Designer, 3D, Décor"
+
+[connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
