@@ -1602,6 +1602,7 @@ vertical_alignment = 1
 [connection signal="pressed" from="Trivia/Crédits" to="." method="_on_crédits_pressed"]
 [connection signal="mouse_entered" from="Trivia/Bonus" to="." method="_on_bonus_mouse_entered"]
 [connection signal="mouse_exited" from="Trivia/Bonus" to="." method="_on_bonus_mouse_exited"]
+[connection signal="pressed" from="Trivia/Bonus" to="." method="_on_bonus_pressed"]
 [connection signal="mouse_entered" from="Quitter" to="." method="_on_quitter_mouse_entered"]
 [connection signal="mouse_exited" from="Quitter" to="." method="_on_quitter_mouse_exited"]
 [connection signal="pressed" from="Quitter" to="." method="_on_quitter_pressed"]
