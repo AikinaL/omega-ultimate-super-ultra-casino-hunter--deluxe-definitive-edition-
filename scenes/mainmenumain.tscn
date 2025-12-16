@@ -2,6 +2,10 @@
 
 [ext_resource type="Script" uid="uid://ecirqp1uuqi2" path="res://scripts/mainmenumain.gd" id="1_b7r8x"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_82get"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="2_x5lwx"]
+>>>>>>> Stashed changes
 [ext_resource type="Texture2D" uid="uid://jouc14re1oek" path="res://assets/animation/image0001.png" id="3_l44fe"]
 [ext_resource type="Texture2D" uid="uid://caqgljcdb6gkm" path="res://assets/animation/image0002.png" id="4_mjern"]
 [ext_resource type="Texture2D" uid="uid://dvp0wgb8sp5c4" path="res://assets/animation/image0003.png" id="5_mddfc"]
@@ -196,6 +200,10 @@
 [ext_resource type="Texture2D" uid="uid://xo6bng42wukr" path="res://assets/Animation bouton 3/image0021.png" id="194_hjaoc"]
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="195_pd0i0"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="196_8tea2"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Shader" path="res://crt.gdshader" id="198_b0wg4"]
+>>>>>>> Stashed changes
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xb0cx"]
 animations = [{
@@ -1602,6 +1610,7 @@ vertical_alignment = 1
 [connection signal="pressed" from="Trivia/Crédits" to="." method="_on_crédits_pressed"]
 [connection signal="mouse_entered" from="Trivia/Bonus" to="." method="_on_bonus_mouse_entered"]
 [connection signal="mouse_exited" from="Trivia/Bonus" to="." method="_on_bonus_mouse_exited"]
+[connection signal="pressed" from="Trivia/Bonus" to="." method="_on_bonus_pressed"]
 [connection signal="mouse_entered" from="Quitter" to="." method="_on_quitter_mouse_entered"]
 [connection signal="mouse_exited" from="Quitter" to="." method="_on_quitter_mouse_exited"]
 [connection signal="pressed" from="Quitter" to="." method="_on_quitter_pressed"]

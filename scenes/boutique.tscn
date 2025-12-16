@@ -98,6 +98,412 @@
 [ext_resource type="Texture2D" uid="uid://xo6bng42wukr" path="res://assets/Animation bouton 3/image0021.png" id="96_mx4we"]
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="97_nlft0"]
 [ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="98_ny7a8"]
+<<<<<<< Updated upstream
+=======
+[ext_resource type="Script" path="res://scripts/slot_machine.gd" id="99_2q1qp"]
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="99_8w3xf"]
+[ext_resource type="AudioStream" uid="uid://px3b37mndq20" path="res://Sound/SFX/gambling-win.mp3" id="100_1q7m0"]
+[ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="100_bdaf4"]
+[ext_resource type="AudioStream" uid="uid://cbybqappwd5yu" path="res://Sound/SFX/gambling-rolling.mp3" id="101_t3q0t"]
+[ext_resource type="Texture2D" uid="uid://ubhpabr0rv8u" path="res://assets/AnimationFeuArtifice/image0000.png" id="198_o0nu2"]
+[ext_resource type="Texture2D" uid="uid://4vvw2d6gcgqc" path="res://assets/AnimationFeuArtifice/image0001.png" id="199_innhw"]
+[ext_resource type="Texture2D" uid="uid://cnv01kgu2ebi7" path="res://assets/AnimationFeuArtifice/image0002.png" id="200_n1bvb"]
+[ext_resource type="Texture2D" uid="uid://bm2j7essqo2s3" path="res://assets/AnimationFeuArtifice/image0003.png" id="201_ubynx"]
+[ext_resource type="Texture2D" uid="uid://bjjs0bq8hkfsn" path="res://assets/AnimationFeuArtifice/image0004.png" id="202_mvge2"]
+[ext_resource type="Shader" path="res://crt.gdshader" id="202_oyfbx"]
+[ext_resource type="Texture2D" uid="uid://b3gw887bii5eo" path="res://assets/AnimationFeuArtifice/image0005.png" id="203_w4u0w"]
+[ext_resource type="Texture2D" uid="uid://b5o4fsj24wirv" path="res://assets/AnimationFeuArtifice/image0006.png" id="204_c8qjd"]
+[ext_resource type="Texture2D" uid="uid://dbvd88rtvq2rv" path="res://assets/AnimationFeuArtifice/image0007.png" id="205_h4yn6"]
+[ext_resource type="Texture2D" uid="uid://b6pw5s6v4j6qk" path="res://assets/AnimationFeuArtifice/image0008.png" id="206_htcyp"]
+[ext_resource type="Texture2D" uid="uid://bngnky1oswf05" path="res://assets/AnimationFeuArtifice/image0009.png" id="207_eqbnm"]
+[ext_resource type="Texture2D" uid="uid://bwn8jfgwds5nx" path="res://assets/AnimationFeuArtifice/image0010.png" id="208_c8udk"]
+[ext_resource type="Texture2D" uid="uid://b8r37spuyjbu8" path="res://assets/AnimationFeuArtifice/image0011.png" id="209_i6n07"]
+[ext_resource type="AudioStream" uid="uid://c8ddno06eisl3" path="res://Sound/SFX/boo-sfx.mp3" id="213_o0nu2"]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_u2ny3"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("2_6f134")
+}, {
+"duration": 1.0,
+"texture": ExtResource("3_oyfbx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("4_j2dvj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("5_ls1y4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("6_s3qho")
+}, {
+"duration": 1.0,
+"texture": ExtResource("7_ytbf0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("8_uq2d5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("9_y8exw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("10_xhcok")
+}, {
+"duration": 1.0,
+"texture": ExtResource("11_1vd4b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("12_as6gw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("13_oe4bl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("14_ai5k6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("15_o0nu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("16_innhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("17_n1bvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("18_ubynx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("19_mvge2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("20_w4u0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("21_c8qjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("22_h4yn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("23_htcyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("24_eqbnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("25_c8udk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("26_i6n07")
+}, {
+"duration": 1.0,
+"texture": ExtResource("27_8q2bx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("28_82csj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("29_loj3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("30_fky36")
+}, {
+"duration": 1.0,
+"texture": ExtResource("31_6quox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("32_50c3w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("33_d6lme")
+}, {
+"duration": 1.0,
+"texture": ExtResource("34_85fgb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("35_u08ct")
+}, {
+"duration": 1.0,
+"texture": ExtResource("36_uxccx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("37_b82er")
+}, {
+"duration": 1.0,
+"texture": ExtResource("38_tsyvr")
+}, {
+"duration": 1.0,
+"texture": ExtResource("39_u1unp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("40_ncaqn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("41_cbpnl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("42_tdirn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("43_knf75")
+}, {
+"duration": 1.0,
+"texture": ExtResource("44_4fljn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("45_8vfx5")
+}, {
+"duration": 1.0,
+"texture": ExtResource("46_0bfba")
+}, {
+"duration": 1.0,
+"texture": ExtResource("47_4bo1b")
+}, {
+"duration": 1.0,
+"texture": ExtResource("48_8oq2a")
+}, {
+"duration": 1.0,
+"texture": ExtResource("49_aitu6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("50_2ndhp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("51_h1pog")
+}, {
+"duration": 1.0,
+"texture": ExtResource("52_53w21")
+}, {
+"duration": 1.0,
+"texture": ExtResource("53_0ic0m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("54_saq0x")
+}, {
+"duration": 1.0,
+"texture": ExtResource("55_ohgat")
+}, {
+"duration": 1.0,
+"texture": ExtResource("56_nrrwu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("57_hv4mq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("58_dkc82")
+}, {
+"duration": 1.0,
+"texture": ExtResource("59_lb8kw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("60_bqim3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("61_o2d7m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("62_7462f")
+}, {
+"duration": 1.0,
+"texture": ExtResource("63_uvosl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("64_mwdvi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("65_mejh8")
+}, {
+"duration": 1.0,
+"texture": ExtResource("66_vmrhd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("67_2ee3e")
+}, {
+"duration": 1.0,
+"texture": ExtResource("68_et2k0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("69_pe06u")
+}, {
+"duration": 1.0,
+"texture": ExtResource("70_v1tcl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("71_030yq")
+}, {
+"duration": 1.0,
+"texture": ExtResource("72_yiyfn")
+}, {
+"duration": 1.0,
+"texture": ExtResource("73_cdeoi")
+}, {
+"duration": 1.0,
+"texture": ExtResource("74_hufl4")
+}, {
+"duration": 1.0,
+"texture": ExtResource("75_ifoa3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("76_jks03")
+}, {
+"duration": 1.0,
+"texture": ExtResource("77_j22qc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("78_wkuft")
+}, {
+"duration": 1.0,
+"texture": ExtResource("79_fi2sl")
+}, {
+"duration": 1.0,
+"texture": ExtResource("80_8ltnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("81_phai7")
+}, {
+"duration": 1.0,
+"texture": ExtResource("82_5m6ly")
+}, {
+"duration": 1.0,
+"texture": ExtResource("83_nlwxb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("84_bu1cw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("85_4x4w3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("86_7h57t")
+}, {
+"duration": 1.0,
+"texture": ExtResource("87_moand")
+}, {
+"duration": 1.0,
+"texture": ExtResource("88_b2uyx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("89_yio5g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("90_y3lit")
+}, {
+"duration": 1.0,
+"texture": ExtResource("91_qbtyd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("92_1j0vc")
+}, {
+"duration": 1.0,
+"texture": ExtResource("93_85b2c")
+}, {
+"duration": 1.0,
+"texture": ExtResource("94_u3v5w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("95_s42l0")
+}, {
+"duration": 1.0,
+"texture": ExtResource("96_qg8jv")
+}, {
+"duration": 1.0,
+"texture": ExtResource("97_t5no2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("98_0twho")
+}],
+"loop": true,
+"name": &"default",
+"speed": 16.0
+}]
+>>>>>>> Stashed changes
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oyfbx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("198_o0nu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_innhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_n1bvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ubynx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_mvge2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_w4u0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_c8qjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_h4yn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_htcyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_eqbnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_c8udk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_i6n07")
+}],
+"loop": true,
+"name": &"feu",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("198_o0nu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_innhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_n1bvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ubynx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_mvge2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_w4u0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_c8qjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_h4yn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_htcyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_eqbnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_c8udk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_i6n07")
+}],
+"loop": true,
+"name": &"feu2",
+"speed": 16.0
+}]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_cr1lk"]
 animations = [{
@@ -411,8 +817,14 @@ animations = [{
 "speed": 12.0
 }]
 
+<<<<<<< Updated upstream
 [sub_resource type="SystemFont" id="SystemFont_83el2"]
 font_names = PackedStringArray("Le Casino Royale")
+=======
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_oyfbx"]
+shader = ExtResource("202_oyfbx")
+shader_parameter/fish_intensity = 0.44800002128
+>>>>>>> Stashed changes
 
 [node name="boutique" type="Control"]
 layout_mode = 3
@@ -423,6 +835,120 @@ grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_xu4t3")
 
+<<<<<<< Updated upstream
+=======
+[node name="Background" type="AnimatedSprite2D" parent="."]
+position = Vector2(800, 450.00003)
+scale = Vector2(0.8333333, 0.8333333)
+sprite_frames = SubResource("SpriteFrames_u2ny3")
+autoplay = "default"
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(800, 450)
+script = ExtResource("99_8w3xf")
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(521, 570)
+sprite_frames = SubResource("SpriteFrames_oyfbx")
+animation = &"feu2"
+autoplay = "feu2"
+
+[node name="AnimatedSprite2D" type="AnimatedSprite2D" parent="."]
+position = Vector2(1075, 417)
+sprite_frames = SubResource("SpriteFrames_oyfbx")
+animation = &"feu"
+autoplay = "feu"
+frame_progress = 0.90098107
+
+[node name="SpendItAll" type="Label" parent="."]
+layout_mode = 1
+anchors_preset = 5
+anchor_left = 0.5
+anchor_right = 0.5
+offset_left = -482.0
+offset_top = 147.0
+offset_right = 482.0
+offset_bottom = 215.0
+grow_horizontal = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 64
+text = "Spend your entire lifesavings"
+
+[node name="SlotMachine" type="Control" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+script = ExtResource("99_2q1qp")
+
+[node name="VBoxContainer" type="VBoxContainer" parent="SlotMachine"]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -141.0
+offset_top = -101.25
+offset_right = 141.0
+offset_bottom = 101.25
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="HBoxContainer" type="HBoxContainer" parent="SlotMachine/VBoxContainer"]
+layout_mode = 2
+
+[node name="Reel1" type="Label" parent="SlotMachine/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 48
+text = "?"
+horizontal_alignment = 1
+
+[node name="Reel2" type="Label" parent="SlotMachine/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 48
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="Reel3" type="Label" parent="SlotMachine/VBoxContainer/HBoxContainer"]
+custom_minimum_size = Vector2(80, 0)
+layout_mode = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 48
+text = "?"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="SpinButton" type="Button" parent="SlotMachine/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 64
+text = "Spin"
+
+[node name="ResultLabel" type="Label" parent="SlotMachine/VBoxContainer"]
+layout_mode = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 30
+text = "..."
+horizontal_alignment = 1
+
+[node name="AudioWin" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("100_1q7m0")
+
+[node name="AudioRolling" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("101_t3q0t")
+
+[node name="AudioLose" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("213_o0nu2")
+
+>>>>>>> Stashed changes
 [node name="Retour" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 3
@@ -467,10 +993,28 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+<<<<<<< Updated upstream
 theme_override_fonts/font = SubResource("SystemFont_83el2")
+=======
+theme_override_fonts/font = ExtResource("100_bdaf4")
+>>>>>>> Stashed changes
 theme_override_font_sizes/font_size = 46
 text = "retour"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+<<<<<<< Updated upstream
+=======
+[node name="CRTFilter" type="ColorRect" parent="."]
+visible = false
+material = SubResource("ShaderMaterial_oyfbx")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
+>>>>>>> Stashed changes
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
