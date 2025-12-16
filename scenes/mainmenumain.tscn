@@ -1,4 +1,4 @@
-[gd_scene load_steps=207 format=3 uid="uid://xsc3d7cn2aky"]
+[gd_scene load_steps=206 format=3 uid="uid://xsc3d7cn2aky"]
 
 [ext_resource type="Script" uid="uid://ecirqp1uuqi2" path="res://scripts/mainmenumain.gd" id="1_b7r8x"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_82get"]
@@ -195,6 +195,7 @@
 [ext_resource type="Texture2D" uid="uid://b2t07teswxhqs" path="res://assets/Animation bouton 3/image0020.png" id="193_cggju"]
 [ext_resource type="Texture2D" uid="uid://xo6bng42wukr" path="res://assets/Animation bouton 3/image0021.png" id="194_hjaoc"]
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="195_pd0i0"]
+[ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="196_8tea2"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xb0cx"]
 animations = [{
@@ -913,12 +914,6 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="SystemFont" id="SystemFont_cx6e3"]
-font_names = PackedStringArray("Le Casino Royale")
-
-[sub_resource type="SystemFont" id="SystemFont_b7r8x"]
-font_names = PackedStringArray("Le Casino Royale")
-
 [node name="MAINMENUMAIN" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -988,7 +983,7 @@ offset_top = -1.5
 offset_bottom = 1.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_cx6e3")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "jouer"
 horizontal_alignment = 1
@@ -1045,7 +1040,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "connexion"
 horizontal_alignment = 1
@@ -1102,7 +1097,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "niveaux"
 horizontal_alignment = 1
@@ -1159,7 +1154,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "high-score"
 horizontal_alignment = 1
@@ -1216,7 +1211,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "boutique"
 horizontal_alignment = 1
@@ -1273,7 +1268,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "chat public"
 horizontal_alignment = 1
@@ -1344,7 +1339,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "réseaux"
 horizontal_alignment = 1
@@ -1401,7 +1396,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "options"
 horizontal_alignment = 1
@@ -1458,7 +1453,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "crédits"
 horizontal_alignment = 1
@@ -1515,7 +1510,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "bonus"
 horizontal_alignment = 1
@@ -1574,7 +1569,7 @@ offset_top = -1.5
 offset_bottom = 1.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_b7r8x")
+theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "quitter"
 horizontal_alignment = 1
