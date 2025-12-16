@@ -3,7 +3,7 @@ extends Node
 var current_music: AudioStreamPlayer = null
 var current_stream: AudioStream = null
 
-func play_music(stream: AudioStream, loop: bool=true):
+func play_music(stream: AudioStream, _loop: bool=true):
 	if current_music:
 		current_music.stop()
 		current_music.queue_free()

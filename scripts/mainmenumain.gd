@@ -15,6 +15,10 @@ func _process(_delta):
 
 
 #region Jouer
+
+func _on_jouer_pressed():
+	get_tree().change_scene_to_file("res://scenes/exterieur.tscn")
+
 func _on_jouer_mouse_entered():
 	$Jouer/AnimationPlayer.play("zoom_in_out")
 

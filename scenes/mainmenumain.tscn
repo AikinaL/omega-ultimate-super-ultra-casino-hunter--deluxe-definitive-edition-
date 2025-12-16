@@ -1,7 +1,8 @@
-[gd_scene load_steps=206 format=3 uid="uid://xsc3d7cn2aky"]
+[gd_scene load_steps=209 format=3 uid="uid://xsc3d7cn2aky"]
 
 [ext_resource type="Script" uid="uid://ecirqp1uuqi2" path="res://scripts/mainmenumain.gd" id="1_b7r8x"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_82get"]
+[ext_resource type="Script" uid="uid://ddvfdia7dqs2n" path="res://scripts/camera_2d.gd" id="2_x5lwx"]
 [ext_resource type="Texture2D" uid="uid://jouc14re1oek" path="res://assets/animation/image0001.png" id="3_l44fe"]
 [ext_resource type="Texture2D" uid="uid://caqgljcdb6gkm" path="res://assets/animation/image0002.png" id="4_mjern"]
 [ext_resource type="Texture2D" uid="uid://dvp0wgb8sp5c4" path="res://assets/animation/image0003.png" id="5_mddfc"]
@@ -196,6 +197,7 @@
 [ext_resource type="Texture2D" uid="uid://xo6bng42wukr" path="res://assets/Animation bouton 3/image0021.png" id="194_hjaoc"]
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="195_pd0i0"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="196_8tea2"]
+[ext_resource type="Shader" uid="uid://58kpqjniwphr" path="res://crt.gdshader" id="198_b0wg4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xb0cx"]
 animations = [{
@@ -914,6 +916,10 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="ShaderMaterial" id="ShaderMaterial_45a6w"]
+shader = ExtResource("198_b0wg4")
+shader_parameter/fish_intensity = 0.44800002128
+
 [node name="MAINMENUMAIN" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -922,6 +928,10 @@ anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
 script = ExtResource("1_b7r8x")
+
+[node name="Camera2D" type="Camera2D" parent="."]
+position = Vector2(800, 450)
+script = ExtResource("2_x5lwx")
 
 [node name="Background" type="AnimatedSprite2D" parent="."]
 position = Vector2(800, 450.00003)
@@ -1574,8 +1584,19 @@ text = "quitter"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="CRTFilter" type="ColorRect" parent="."]
+material = SubResource("ShaderMaterial_45a6w")
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+mouse_filter = 2
+
 [connection signal="mouse_entered" from="Jouer" to="." method="_on_jouer_mouse_entered"]
 [connection signal="mouse_exited" from="Jouer" to="." method="_on_jouer_mouse_exited"]
+[connection signal="pressed" from="Jouer" to="." method="_on_jouer_pressed"]
 [connection signal="mouse_entered" from="Connexion" to="." method="_on_connexion_mouse_entered"]
 [connection signal="mouse_exited" from="Connexion" to="." method="_on_connexion_mouse_exited"]
 [connection signal="pressed" from="Connexion" to="." method="_on_connexion_pressed"]
