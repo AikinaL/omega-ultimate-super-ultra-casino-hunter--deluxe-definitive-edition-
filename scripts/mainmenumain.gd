@@ -139,8 +139,6 @@ func _on_bonus_mouse_entered():
 func _on_bonus_pressed():
 	get_tree().change_scene_to_file("res://scenes/boonus.tscn")
 
-#func _on_bonus_mouse_exited():
-	#$Trivia/Bonus/AnimationPlayer.stop()
 #endregion
 
 
