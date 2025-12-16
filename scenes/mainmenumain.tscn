@@ -2,7 +2,7 @@
 
 [ext_resource type="Script" uid="uid://ecirqp1uuqi2" path="res://scripts/mainmenumain.gd" id="1_b7r8x"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_82get"]
-[ext_resource type="Script" uid="uid://ddvfdia7dqs2n" path="res://scripts/camera_2d.gd" id="2_x5lwx"]
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="2_x5lwx"]
 [ext_resource type="Texture2D" uid="uid://jouc14re1oek" path="res://assets/animation/image0001.png" id="3_l44fe"]
 [ext_resource type="Texture2D" uid="uid://caqgljcdb6gkm" path="res://assets/animation/image0002.png" id="4_mjern"]
 [ext_resource type="Texture2D" uid="uid://dvp0wgb8sp5c4" path="res://assets/animation/image0003.png" id="5_mddfc"]
@@ -197,7 +197,7 @@
 [ext_resource type="Texture2D" uid="uid://xo6bng42wukr" path="res://assets/Animation bouton 3/image0021.png" id="194_hjaoc"]
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="195_pd0i0"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="196_8tea2"]
-[ext_resource type="Shader" uid="uid://58kpqjniwphr" path="res://crt.gdshader" id="198_b0wg4"]
+[ext_resource type="Shader" path="res://crt.gdshader" id="198_b0wg4"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_xb0cx"]
 animations = [{
@@ -1483,6 +1483,7 @@ offset_bottom = 123.0
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
+button_mask = 0
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Bonus"]
 libraries = {

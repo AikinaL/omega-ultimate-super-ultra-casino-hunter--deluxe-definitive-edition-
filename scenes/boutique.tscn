@@ -195,8 +195,8 @@
 [ext_resource type="Texture2D" uid="uid://c14d2gor5api8" path="res://assets/animation/image0095.png" id="97_t5no2"]
 [ext_resource type="Texture2D" uid="uid://bahq3ibkw84ij" path="res://assets/animation/image0096.png" id="98_0twho"]
 [ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="98_ny7a8"]
-[ext_resource type="Script" uid="uid://d0en2jbbt25my" path="res://scripts/slot_machine.gd" id="99_2q1qp"]
-[ext_resource type="Script" uid="uid://ddvfdia7dqs2n" path="res://scripts/camera_2d.gd" id="99_8w3xf"]
+[ext_resource type="Script" path="res://scripts/slot_machine.gd" id="99_2q1qp"]
+[ext_resource type="Script" path="res://scripts/camera_2d.gd" id="99_8w3xf"]
 [ext_resource type="AudioStream" uid="uid://px3b37mndq20" path="res://Sound/SFX/gambling-win.mp3" id="100_1q7m0"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="100_bdaf4"]
 [ext_resource type="AudioStream" uid="uid://cbybqappwd5yu" path="res://Sound/SFX/gambling-rolling.mp3" id="101_t3q0t"]
@@ -205,7 +205,7 @@
 [ext_resource type="Texture2D" uid="uid://cnv01kgu2ebi7" path="res://assets/AnimationFeuArtifice/image0002.png" id="200_n1bvb"]
 [ext_resource type="Texture2D" uid="uid://bm2j7essqo2s3" path="res://assets/AnimationFeuArtifice/image0003.png" id="201_ubynx"]
 [ext_resource type="Texture2D" uid="uid://bjjs0bq8hkfsn" path="res://assets/AnimationFeuArtifice/image0004.png" id="202_mvge2"]
-[ext_resource type="Shader" uid="uid://58kpqjniwphr" path="res://crt.gdshader" id="202_oyfbx"]
+[ext_resource type="Shader" path="res://crt.gdshader" id="202_oyfbx"]
 [ext_resource type="Texture2D" uid="uid://b3gw887bii5eo" path="res://assets/AnimationFeuArtifice/image0005.png" id="203_w4u0w"]
 [ext_resource type="Texture2D" uid="uid://b5o4fsj24wirv" path="res://assets/AnimationFeuArtifice/image0006.png" id="204_c8qjd"]
 [ext_resource type="Texture2D" uid="uid://dbvd88rtvq2rv" path="res://assets/AnimationFeuArtifice/image0007.png" id="205_h4yn6"]
@@ -511,6 +511,91 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 16.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_oyfbx"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("198_o0nu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_innhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_n1bvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ubynx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_mvge2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_w4u0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_c8qjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_h4yn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_htcyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_eqbnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_c8udk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_i6n07")
+}],
+"loop": true,
+"name": &"feu",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("198_o0nu2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("199_innhw")
+}, {
+"duration": 1.0,
+"texture": ExtResource("200_n1bvb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("201_ubynx")
+}, {
+"duration": 1.0,
+"texture": ExtResource("202_mvge2")
+}, {
+"duration": 1.0,
+"texture": ExtResource("203_w4u0w")
+}, {
+"duration": 1.0,
+"texture": ExtResource("204_c8qjd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("205_h4yn6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("206_htcyp")
+}, {
+"duration": 1.0,
+"texture": ExtResource("207_eqbnm")
+}, {
+"duration": 1.0,
+"texture": ExtResource("208_c8udk")
+}, {
+"duration": 1.0,
+"texture": ExtResource("209_i6n07")
+}],
+"loop": true,
+"name": &"feu2",
 "speed": 16.0
 }]
 
@@ -826,91 +911,6 @@ animations = [{
 "speed": 12.0
 }]
 
-[sub_resource type="SpriteFrames" id="SpriteFrames_oyfbx"]
-animations = [{
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("198_o0nu2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("199_innhw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("200_n1bvb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("201_ubynx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("202_mvge2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("203_w4u0w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("204_c8qjd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("205_h4yn6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("206_htcyp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("207_eqbnm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("208_c8udk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("209_i6n07")
-}],
-"loop": true,
-"name": &"feu",
-"speed": 16.0
-}, {
-"frames": [{
-"duration": 1.0,
-"texture": ExtResource("198_o0nu2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("199_innhw")
-}, {
-"duration": 1.0,
-"texture": ExtResource("200_n1bvb")
-}, {
-"duration": 1.0,
-"texture": ExtResource("201_ubynx")
-}, {
-"duration": 1.0,
-"texture": ExtResource("202_mvge2")
-}, {
-"duration": 1.0,
-"texture": ExtResource("203_w4u0w")
-}, {
-"duration": 1.0,
-"texture": ExtResource("204_c8qjd")
-}, {
-"duration": 1.0,
-"texture": ExtResource("205_h4yn6")
-}, {
-"duration": 1.0,
-"texture": ExtResource("206_htcyp")
-}, {
-"duration": 1.0,
-"texture": ExtResource("207_eqbnm")
-}, {
-"duration": 1.0,
-"texture": ExtResource("208_c8udk")
-}, {
-"duration": 1.0,
-"texture": ExtResource("209_i6n07")
-}],
-"loop": true,
-"name": &"feu2",
-"speed": 16.0
-}]
-
 [sub_resource type="ShaderMaterial" id="ShaderMaterial_oyfbx"]
 shader = ExtResource("202_oyfbx")
 shader_parameter/fish_intensity = 0.44800002128
@@ -933,56 +933,6 @@ autoplay = "default"
 [node name="Camera2D" type="Camera2D" parent="."]
 position = Vector2(800, 450)
 script = ExtResource("99_8w3xf")
-
-[node name="Retour" type="Button" parent="."]
-layout_mode = 1
-anchors_preset = 3
-anchor_left = 1.0
-anchor_top = 1.0
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -195.0
-offset_top = -58.0
-offset_right = -21.0
-offset_bottom = -12.0
-grow_horizontal = 0
-grow_vertical = 0
-
-[node name="back" type="AnimatedSprite2D" parent="Retour"]
-position = Vector2(85.833374, 20.25)
-scale = Vector2(0.32552084, 0.14062496)
-sprite_frames = SubResource("SpriteFrames_cr1lk")
-autoplay = "default"
-
-[node name="front" type="AnimatedSprite2D" parent="Retour"]
-position = Vector2(86, 22.375)
-scale = Vector2(0.32500008, 0.14427087)
-sprite_frames = SubResource("SpriteFrames_0n522")
-autoplay = "default"
-
-[node name="bulles" type="AnimatedSprite2D" parent="Retour"]
-position = Vector2(86.05615, 21.5)
-scale = Vector2(0.33419967, 0.13958335)
-sprite_frames = SubResource("SpriteFrames_yfbfv")
-autoplay = "default"
-
-[node name="CadreBouton" type="Sprite2D" parent="Retour"]
-position = Vector2(86, 22)
-scale = Vector2(0.340625, 0.1489584)
-texture = ExtResource("98_ny7a8")
-
-[node name="Label" type="Label" parent="Retour"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("100_bdaf4")
-theme_override_font_sizes/font_size = 46
-text = "retour"
-horizontal_alignment = 1
-vertical_alignment = 1
 
 [node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
 position = Vector2(521, 570)
@@ -1084,6 +1034,56 @@ stream = ExtResource("101_t3q0t")
 
 [node name="AudioLose" type="AudioStreamPlayer" parent="."]
 stream = ExtResource("213_o0nu2")
+
+[node name="Retour" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 3
+anchor_left = 1.0
+anchor_top = 1.0
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -195.0
+offset_top = -58.0
+offset_right = -21.0
+offset_bottom = -12.0
+grow_horizontal = 0
+grow_vertical = 0
+
+[node name="back" type="AnimatedSprite2D" parent="Retour"]
+position = Vector2(85.833374, 20.25)
+scale = Vector2(0.32552084, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_cr1lk")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Retour"]
+position = Vector2(86, 22.375)
+scale = Vector2(0.32500008, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_0n522")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Retour"]
+position = Vector2(86.05615, 21.5)
+scale = Vector2(0.33419967, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_yfbfv")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Retour"]
+position = Vector2(86, 22)
+scale = Vector2(0.340625, 0.1489584)
+texture = ExtResource("98_ny7a8")
+
+[node name="Label" type="Label" parent="Retour"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("100_bdaf4")
+theme_override_font_sizes/font_size = 46
+text = "retour"
+horizontal_alignment = 1
+vertical_alignment = 1
 
 [node name="CRTFilter" type="ColorRect" parent="."]
 visible = false
