@@ -15,10 +15,6 @@ run/main_scene="uid://xsc3d7cn2aky"
 config/features=PackedStringArray("4.5", "Forward Plus")
 config/icon="res://icon.svg"
 
-[autoload]
-
-mouseinverted="*res://mouseinverted.gd"
-
 [display]
 
 window/size/viewport_width=1600

@@ -471,7 +471,7 @@ text = "retour"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="Button" type="Button" parent="."]
+[node name="MouseInverted" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -484,6 +484,7 @@ offset_right = 180.25
 offset_bottom = 81.75
 grow_horizontal = 2
 grow_vertical = 2
-text = "AAAAAAAAAAA"
+text = "Mouse inversion"
 
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
+[connection signal="pressed" from="MouseInverted" to="." method="_on_mouse_inverted_pressed"]
