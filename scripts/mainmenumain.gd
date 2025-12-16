@@ -6,7 +6,7 @@ var randomX = random.randi_range(175, screensize.x - 175)
 var randomY = random.randi_range(45, screensize.y - 45)
 # Called when the node enters the scene tree for the first time.
 func _ready():
-	pass
+	MusicManager.play_music(preload("res://Sound/Music/thereisnogame-alternative-version.mp3"))
 
 
 # Called every frame. 'delta' is the elapsed time since the previous frame.

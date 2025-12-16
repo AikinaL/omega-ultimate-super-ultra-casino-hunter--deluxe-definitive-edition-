@@ -1,4 +1,4 @@
-[gd_scene load_steps=103 format=3 uid="uid://oq78k17vygou"]
+[gd_scene load_steps=104 format=3 uid="uid://oq78k17vygou"]
 
 [ext_resource type="Script" uid="uid://bhujm3eai7wvw" path="res://scripts/optionmenuoption.gd" id="1_s8ya3"]
 [ext_resource type="Texture2D" uid="uid://cp6rjigl2h7f4" path="res://assets/Animation bouton 2/image0000.png" id="2_w8otx"]
@@ -99,6 +99,7 @@
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="97_qqou6"]
 [ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="98_gcqjy"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="99_gkact"]
+[ext_resource type="AudioStream" uid="uid://dxbdqrpwdkd2e" path="res://Sound/SFX/bruitchelou.mp3" id="100_hml1k"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_8giqs"]
 animations = [{
@@ -471,7 +472,7 @@ text = "retour"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="MouseInverted" type="Button" parent="."]
+[node name="CursedOption" type="Button" parent="."]
 layout_mode = 1
 anchors_preset = 8
 anchor_left = 0.5
@@ -480,11 +481,54 @@ anchor_right = 0.5
 anchor_bottom = 0.5
 offset_left = -180.25
 offset_top = -81.75
-offset_right = 180.25
-offset_bottom = 81.75
+offset_right = -21.0
+offset_bottom = -35.0
 grow_horizontal = 2
 grow_vertical = 2
-text = "Mouse inversion"
+text = "Fix my life"
+
+[node name="back" type="AnimatedSprite2D" parent="CursedOption"]
+position = Vector2(85.833374, 20.25)
+scale = Vector2(0.32552084, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_8giqs")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="CursedOption"]
+position = Vector2(86, 22.375)
+scale = Vector2(0.32500008, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_a5xq3")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="CursedOption"]
+position = Vector2(86.05615, 21.5)
+scale = Vector2(0.33419967, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_ftl85")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="CursedOption"]
+position = Vector2(86, 22)
+scale = Vector2(0.340625, 0.1489584)
+texture = ExtResource("98_gcqjy")
+
+[node name="Label" type="Label" parent="CursedOption"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = -32.375
+offset_top = -1.125
+offset_right = 48.375
+offset_bottom = 1.125
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_fonts/font = ExtResource("99_gkact")
+theme_override_font_sizes/font_size = 35
+text = "Fix my life"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="bruitchelou" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("100_hml1k")
 
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
-[connection signal="pressed" from="MouseInverted" to="." method="_on_mouse_inverted_pressed"]
+[connection signal="pressed" from="CursedOption" to="." method="_on_cursed_option_pressed"]
