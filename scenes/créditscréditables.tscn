@@ -1,6 +1,7 @@
-[gd_scene load_steps=104 format=3 uid="uid://ch651nxn84o8w"]
+[gd_scene load_steps=105 format=3 uid="uid://ch651nxn84o8w"]
 
 [ext_resource type="Script" uid="uid://db7ffwabm5lwt" path="res://scripts/créditscréditables.gd" id="1_1urvc"]
+[ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="2_1rgua"]
 [ext_resource type="Texture2D" uid="uid://cp6rjigl2h7f4" path="res://assets/Animation bouton 2/image0000.png" id="2_7bp1l"]
 [ext_resource type="Texture2D" uid="uid://bhwgk2vnscwr0" path="res://assets/Animation bouton 2/image0001.png" id="3_1rgua"]
 [ext_resource type="Texture2D" uid="uid://d4j35ytfymu25" path="res://assets/Animation bouton 2/image0002.png" id="4_kxtwo"]
@@ -444,13 +445,13 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -128.0
-offset_top = -107.5
-offset_right = 128.0
-offset_bottom = -84.5
+offset_left = -562.5
+offset_top = -160.5
+offset_right = 562.5
+offset_bottom = -111.5
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = SubResource("SystemFont_7bp1l")
+theme_override_fonts/font = ExtResource("2_1rgua")
 theme_override_font_sizes/font_size = 46
 text = "Loubier Aaliyah - Game Designer, Programmation"
 
@@ -459,10 +460,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -70.0
-offset_top = -67.5
-offset_right = 70.0
-offset_bottom = -44.5
+offset_left = -391.0
+offset_top = -96.5
+offset_right = 391.0
+offset_bottom = -47.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = SubResource("SystemFont_7bp1l")
@@ -474,10 +475,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -117.5
-offset_top = -27.5
-offset_right = 117.5
-offset_bottom = -4.5
+offset_left = -516.0
+offset_top = -32.5
+offset_right = 516.0
+offset_bottom = 16.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = SubResource("SystemFont_7bp1l")
@@ -489,10 +490,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -117.5
-offset_top = 12.5
-offset_right = 117.5
-offset_bottom = 35.5
+offset_left = -712.5
+offset_top = 31.5
+offset_right = 712.5
+offset_bottom = 80.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = SubResource("SystemFont_7bp1l")
@@ -504,10 +505,10 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -158.5
-offset_top = 52.5
-offset_right = 158.5
-offset_bottom = 75.5
+offset_left = -535.0
+offset_top = 95.5
+offset_right = 535.0
+offset_bottom = 144.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = SubResource("SystemFont_7bp1l")
