@@ -20,3 +20,9 @@ func set_muffled(muffled: bool):
 		current_music.bus = "Muffled"
 	else:
 		current_music.bus = "Master"
+
+func stop_music():
+	if current_music:
+		current_music.stop()
+		current_music.queue_free()
+		current_music = null
