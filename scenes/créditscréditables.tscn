@@ -1,4 +1,4 @@
-[gd_scene load_steps=201 format=3 uid="uid://ch651nxn84o8w"]
+[gd_scene load_steps=202 format=3 uid="uid://ch651nxn84o8w"]
 
 [ext_resource type="Script" uid="uid://db7ffwabm5lwt" path="res://scripts/créditscréditables.gd" id="1_1urvc"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="2_1rgua"]
@@ -808,6 +808,10 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="SystemFont" id="SystemFont_7d65v"]
+font_names = PackedStringArray("Le Casino Royale")
+subpixel_positioning = 0
+
 [node name="Créditscréditables" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -954,7 +958,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_1rgua")
+theme_override_fonts/font = SubResource("SystemFont_7d65v")
 theme_override_font_sizes/font_size = 46
 text = "retour"
 horizontal_alignment = 1

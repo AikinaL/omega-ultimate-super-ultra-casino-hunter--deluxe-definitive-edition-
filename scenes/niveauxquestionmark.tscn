@@ -98,7 +98,6 @@
 [ext_resource type="Texture2D" uid="uid://xo6bng42wukr" path="res://assets/Animation bouton 3/image0021.png" id="96_yc3lg"]
 [ext_resource type="Texture2D" uid="uid://c3k0lbjr7ctw" path="res://assets/Animation bouton 3/image0022.png" id="97_mlbx7"]
 [ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="98_dlsco"]
-[ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="99_5d7ye"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_lgmgl"]
 animations = [{
@@ -412,6 +411,9 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="SystemFont" id="SystemFont_01ejg"]
+font_names = PackedStringArray("Le Casino Royale")
+
 [node name="Niveauxquestionmark" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -465,7 +467,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("99_5d7ye")
+theme_override_fonts/font = SubResource("SystemFont_01ejg")
 theme_override_font_sizes/font_size = 46
 text = "retour"
 horizontal_alignment = 1

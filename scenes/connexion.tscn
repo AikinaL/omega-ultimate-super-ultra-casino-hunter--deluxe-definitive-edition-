@@ -1,4 +1,4 @@
-[gd_scene load_steps=207 format=3 uid="uid://cvfyp2cuewptm"]
+[gd_scene load_steps=208 format=3 uid="uid://cvfyp2cuewptm"]
 
 [ext_resource type="Script" uid="uid://cs8g2yaqob7cr" path="res://scripts/connexion.gd" id="1_g58tc"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_oywop"]
@@ -808,10 +808,65 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="SystemFont" id="SystemFont_rwyvt"]
+font_names = PackedStringArray("Le Casino Royale")
+
 [sub_resource type="StyleBoxFlat" id="StyleBoxFlat_oywop"]
 bg_color = Color(0.6, 0.6, 0.6, 0)
 
 [sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_05haw"]
+
+[sub_resource type="Animation" id="Animation_05haw"]
+resource_name = "strech"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:size")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.8, 1),
+"transitions": PackedFloat32Array(1, 2.4622896, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1030, 868), Vector2(1030, 868), Vector2(1030, 868), Vector2(1030, 868), Vector2(1030, 868)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:rotation")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.8, 1),
+"transitions": PackedFloat32Array(1, 2.4622896, 1, 1, 1),
+"update": 0,
+"values": [0.0, -0.02617994, -0.02617994, -0.02617994, 0.0]
+}
+tracks/2/type = "value"
+tracks/2/imported = false
+tracks/2/enabled = true
+tracks/2/path = NodePath(".:scale")
+tracks/2/interp = 1
+tracks/2/loop_wrap = true
+tracks/2/keys = {
+"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.8, 1),
+"transitions": PackedFloat32Array(1, 2.4622896, 1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5598083, 1), Vector2(1.4346145, 1), Vector2(1.5598083, 1), Vector2(1, 1)]
+}
+tracks/3/type = "value"
+tracks/3/imported = false
+tracks/3/enabled = true
+tracks/3/path = NodePath(".:theme_override_colors/font_color")
+tracks/3/interp = 1
+tracks/3/loop_wrap = true
+tracks/3/keys = {
+"times": PackedFloat32Array(0, 0.1, 0.2, 0.30222952, 0.3998245, 0.49741945, 0.60288495, 0.6989058, 0.8027972, 0.9019663, 1),
+"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0.078431375, 0, 1), Color(0.81057715, 0.70969266, 0, 1), Color(0, 1, 0, 1), Color(8.6635355e-06, 0.9585524, 0.864414, 1), Color(0.16078432, 0, 0.8862745, 1), Color(1, 0.21176471, 0.9098039, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 0, 0, 1)]
+}
 
 [sub_resource type="Animation" id="Animation_h7vyp"]
 length = 0.001
@@ -892,58 +947,6 @@ tracks/0/keys = {
 "values": [Color(1, 1, 1, 1), Color(0.99346083, 0.091839574, 0, 1), Color(0.9072889, 0.62470657, 1.540184e-06, 1), Color(0, 0.8312606, 0.032935295, 1), Color(2.8878452e-07, 0.82935655, 0.73422307, 1), Color(0.07239797, 0.32439506, 0.99999994, 1), Color(0.7632351, 0.09655083, 0.9999998, 1), Color(1, 1, 1, 1)]
 }
 
-[sub_resource type="Animation" id="Animation_05haw"]
-resource_name = "strech"
-loop_mode = 1
-tracks/0/type = "value"
-tracks/0/imported = false
-tracks/0/enabled = true
-tracks/0/path = NodePath(".:size")
-tracks/0/interp = 1
-tracks/0/loop_wrap = true
-tracks/0/keys = {
-"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.8, 1),
-"transitions": PackedFloat32Array(1, 2.4622896, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1030, 868), Vector2(1030, 868), Vector2(1030, 868), Vector2(1030, 868), Vector2(1030, 868)]
-}
-tracks/1/type = "value"
-tracks/1/imported = false
-tracks/1/enabled = true
-tracks/1/path = NodePath(".:rotation")
-tracks/1/interp = 1
-tracks/1/loop_wrap = true
-tracks/1/keys = {
-"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.8, 1),
-"transitions": PackedFloat32Array(1, 2.4622896, 1, 1, 1),
-"update": 0,
-"values": [0.0, -0.02617994, -0.02617994, -0.02617994, 0.0]
-}
-tracks/2/type = "value"
-tracks/2/imported = false
-tracks/2/enabled = true
-tracks/2/path = NodePath(".:scale")
-tracks/2/interp = 1
-tracks/2/loop_wrap = true
-tracks/2/keys = {
-"times": PackedFloat32Array(0, 0.36666667, 0.56666666, 0.8, 1),
-"transitions": PackedFloat32Array(1, 2.4622896, 1, 1, 1),
-"update": 0,
-"values": [Vector2(1, 1), Vector2(1.5598083, 1), Vector2(1.4346145, 1), Vector2(1.5598083, 1), Vector2(1, 1)]
-}
-tracks/3/type = "value"
-tracks/3/imported = false
-tracks/3/enabled = true
-tracks/3/path = NodePath(".:theme_override_colors/font_color")
-tracks/3/interp = 1
-tracks/3/loop_wrap = true
-tracks/3/keys = {
-"times": PackedFloat32Array(0, 0.1, 0.2, 0.30222952, 0.3998245, 0.49741945, 0.60288495, 0.6989058, 0.8027972, 0.9019663, 1),
-"transitions": PackedFloat32Array(1, 1, 1, 1, 1, 1, 1, 1, 1, 1, 1),
-"update": 0,
-"values": [Color(1, 1, 1, 1), Color(1, 0.078431375, 0, 1), Color(0.81057715, 0.70969266, 0, 1), Color(0, 1, 0, 1), Color(8.6635355e-06, 0.9585524, 0.864414, 1), Color(0.16078432, 0, 0.8862745, 1), Color(1, 0.21176471, 0.9098039, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 0, 0, 1)]
-}
-
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0xec7"]
 _data = {
 &"RESET": SubResource("Animation_h7vyp"),
@@ -1010,7 +1013,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
-theme_override_fonts/font = ExtResource("196_05haw")
+theme_override_fonts/font = SubResource("SystemFont_rwyvt")
 theme_override_font_sizes/font_size = 46
 text = "retour"
 horizontal_alignment = 1
