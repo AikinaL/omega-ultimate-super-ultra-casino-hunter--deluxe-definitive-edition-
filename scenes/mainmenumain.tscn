@@ -492,7 +492,7 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 18.0
+"speed": 16.0
 }]
 
 [sub_resource type="Animation" id="Animation_cx6e3"]
@@ -836,9 +836,6 @@ animations = [{
 "speed": 16.0
 }]
 
-[sub_resource type="SystemFont" id="SystemFont_cx6e3"]
-font_names = PackedStringArray("Le Casino Royale")
-
 [sub_resource type="SpriteFrames" id="SpriteFrames_cosir"]
 animations = [{
 "frames": [{
@@ -913,8 +910,11 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
-"speed": 16.0
+"speed": 12.0
 }]
+
+[sub_resource type="SystemFont" id="SystemFont_cx6e3"]
+font_names = PackedStringArray("Le Casino Royale")
 
 [sub_resource type="SystemFont" id="SystemFont_b7r8x"]
 font_names = PackedStringArray("Le Casino Royale")
@@ -929,6 +929,7 @@ grow_vertical = 2
 script = ExtResource("1_b7r8x")
 
 [node name="Background" type="AnimatedSprite2D" parent="."]
+visible = false
 position = Vector2(800, 450.00003)
 scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_xb0cx")
@@ -967,6 +968,12 @@ scale = Vector2(0.3010417, 0.14427087)
 sprite_frames = SubResource("SpriteFrames_lkaqy")
 autoplay = "default"
 
+[node name="bulles" type="AnimatedSprite2D" parent="Jouer"]
+position = Vector2(89.05609, 21.5)
+scale = Vector2(0.29669973, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
 [node name="CadreBouton" type="Sprite2D" parent="Jouer"]
 position = Vector2(89.00001, 22)
 scale = Vector2(0.30520838, 0.1489584)
@@ -987,12 +994,6 @@ text = "jouer"
 horizontal_alignment = 1
 vertical_alignment = 1
 
-[node name="bulles" type="AnimatedSprite2D" parent="Jouer"]
-position = Vector2(89, 22.500002)
-scale = Vector2(0.29687497, 0.14375)
-sprite_frames = SubResource("SpriteFrames_cosir")
-autoplay = "default"
-
 [node name="Connexion" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -1009,6 +1010,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Connexion"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Connexion"]
+position = Vector2(85.83334, 20.25)
+scale = Vector2(0.40052086, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Connexion"]
+position = Vector2(85.99997, 22.375)
+scale = Vector2(0.39375007, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Connexion"]
+position = Vector2(86.05609, 21.5)
+scale = Vector2(0.39669973, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Connexion"]
+position = Vector2(86, 22)
+scale = Vector2(0.40937495, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Connexion"]
 layout_mode = 1
 anchors_preset = 15
@@ -1021,11 +1050,6 @@ theme_override_font_sizes/font_size = 46
 text = "connexion"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Connexion"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Niveaux" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -1043,6 +1067,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Niveaux"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Niveaux"]
+position = Vector2(85.83334, 20.25)
+scale = Vector2(0.32552084, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Niveaux"]
+position = Vector2(85.99997, 22.375)
+scale = Vector2(0.32500008, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Niveaux"]
+position = Vector2(86.05609, 21.5)
+scale = Vector2(0.33419967, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Niveaux"]
+position = Vector2(86, 22)
+scale = Vector2(0.340625, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Niveaux"]
 layout_mode = 1
 anchors_preset = 15
@@ -1055,11 +1107,6 @@ theme_override_font_sizes/font_size = 46
 text = "niveaux"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Niveaux"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="HighScore" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -1077,6 +1124,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="HighScore"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="HighScore"]
+position = Vector2(85.83334, 20.25)
+scale = Vector2(0.42864582, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="HighScore"]
+position = Vector2(85.99997, 22.375)
+scale = Vector2(0.43125007, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="HighScore"]
+position = Vector2(86.05609, 21.5)
+scale = Vector2(0.43732464, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="HighScore"]
+position = Vector2(86, 22)
+scale = Vector2(0.44687495, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="HighScore"]
 layout_mode = 1
 anchors_preset = 15
@@ -1089,11 +1164,6 @@ theme_override_font_sizes/font_size = 46
 text = "high-score"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="HighScore"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Boutique" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -1111,6 +1181,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Boutique"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Boutique"]
+position = Vector2(85.83334, 20.25)
+scale = Vector2(0.3442708, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Boutique"]
+position = Vector2(85.99997, 22.375)
+scale = Vector2(0.34375012, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Boutique"]
+position = Vector2(86.05609, 21.5)
+scale = Vector2(0.3529497, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Boutique"]
+position = Vector2(86, 22)
+scale = Vector2(0.3625, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Boutique"]
 layout_mode = 1
 anchors_preset = 15
@@ -1123,11 +1221,6 @@ theme_override_font_sizes/font_size = 46
 text = "boutique"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Boutique"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="ChatPublic" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -1145,6 +1238,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="ChatPublic"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="ChatPublic"]
+position = Vector2(85.83334, 20.25)
+scale = Vector2(0.43177077, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="ChatPublic"]
+position = Vector2(85.99997, 22.375)
+scale = Vector2(0.43125007, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="ChatPublic"]
+position = Vector2(87, 22)
+scale = Vector2(0.44999996, 0.1489584)
+texture = ExtResource("130_26vvh")
+
+[node name="bulles" type="AnimatedSprite2D" parent="ChatPublic"]
+position = Vector2(86.05609, 21.5)
+scale = Vector2(0.44044968, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
 [node name="Label" type="Label" parent="ChatPublic"]
 layout_mode = 1
 anchors_preset = 15
@@ -1157,11 +1278,6 @@ theme_override_font_sizes/font_size = 46
 text = "chat public"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="ChatPublic"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Trivia" type="Control" parent="."]
 layout_mode = 1
@@ -1193,6 +1309,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Réseaux"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Trivia/Réseaux"]
+position = Vector2(85.833374, 20.25)
+scale = Vector2(0.35052055, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Trivia/Réseaux"]
+position = Vector2(86, 22.375)
+scale = Vector2(0.34999993, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Trivia/Réseaux"]
+position = Vector2(86.05615, 21.5)
+scale = Vector2(0.35607457, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Trivia/Réseaux"]
+position = Vector2(86, 22)
+scale = Vector2(0.36250007, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Trivia/Réseaux"]
 layout_mode = 1
 anchors_preset = 15
@@ -1205,11 +1349,6 @@ theme_override_font_sizes/font_size = 46
 text = "réseaux"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Réseaux"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Options" type="Button" parent="Trivia"]
 self_modulate = Color(1, 1, 1, 0)
@@ -1227,6 +1366,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Options"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Trivia/Options"]
+position = Vector2(85.833374, 20.25)
+scale = Vector2(0.3161459, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Trivia/Options"]
+position = Vector2(86, 22.375)
+scale = Vector2(0.31562504, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Trivia/Options"]
+position = Vector2(86.05615, 21.5)
+scale = Vector2(0.32482457, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Trivia/Options"]
+position = Vector2(86, 22)
+scale = Vector2(0.32812518, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Trivia/Options"]
 layout_mode = 1
 anchors_preset = 15
@@ -1239,11 +1406,6 @@ theme_override_font_sizes/font_size = 46
 text = "options"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Options"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Crédits" type="Button" parent="Trivia"]
 self_modulate = Color(1, 1, 1, 0)
@@ -1261,6 +1423,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Crédits"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Trivia/Crédits"]
+position = Vector2(85.833374, 20.25)
+scale = Vector2(0.3286459, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Trivia/Crédits"]
+position = Vector2(86, 22.375)
+scale = Vector2(0.3281252, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Trivia/Crédits"]
+position = Vector2(86.05615, 21.5)
+scale = Vector2(0.34044957, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Trivia/Crédits"]
+position = Vector2(86, 22)
+scale = Vector2(0.3406251, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Trivia/Crédits"]
 layout_mode = 1
 anchors_preset = 15
@@ -1273,11 +1463,6 @@ theme_override_font_sizes/font_size = 46
 text = "crédits"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Crédits"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Bonus" type="Button" parent="Trivia"]
 self_modulate = Color(1, 1, 1, 0)
@@ -1295,6 +1480,34 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Bonus"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Trivia/Bonus"]
+position = Vector2(85.833374, 20.25)
+scale = Vector2(0.29427063, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Trivia/Bonus"]
+position = Vector2(86, 22.375)
+scale = Vector2(0.29374975, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Trivia/Bonus"]
+position = Vector2(86.05615, 21.5)
+scale = Vector2(0.29357463, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Trivia/Bonus"]
+position = Vector2(86, 22)
+scale = Vector2(0.29687482, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Trivia/Bonus"]
 layout_mode = 1
 anchors_preset = 15
@@ -1307,11 +1520,6 @@ theme_override_font_sizes/font_size = 46
 text = "bonus"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Trivia/Bonus"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [node name="Quitter" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
@@ -1329,11 +1537,41 @@ grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(85, 25)
 
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Quitter"]
+libraries = {
+&"": SubResource("AnimationLibrary_cx6e3")
+}
+
+[node name="back" type="AnimatedSprite2D" parent="Quitter"]
+position = Vector2(85.83334, 20.25)
+scale = Vector2(0.32552084, 0.14062496)
+sprite_frames = SubResource("SpriteFrames_34svb")
+autoplay = "default"
+
+[node name="front" type="AnimatedSprite2D" parent="Quitter"]
+position = Vector2(85.99997, 22.375)
+scale = Vector2(0.32500008, 0.14427087)
+sprite_frames = SubResource("SpriteFrames_lkaqy")
+autoplay = "default"
+
+[node name="bulles" type="AnimatedSprite2D" parent="Quitter"]
+position = Vector2(86.05609, 21.5)
+scale = Vector2(0.33419967, 0.13958335)
+sprite_frames = SubResource("SpriteFrames_cosir")
+autoplay = "default"
+
+[node name="CadreBouton" type="Sprite2D" parent="Quitter"]
+position = Vector2(86, 22)
+scale = Vector2(0.340625, 0.1489584)
+texture = ExtResource("130_26vvh")
+
 [node name="Label" type="Label" parent="Quitter"]
 layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
+offset_top = -1.5
+offset_bottom = 1.5
 grow_horizontal = 2
 grow_vertical = 2
 theme_override_fonts/font = SubResource("SystemFont_b7r8x")
@@ -1341,11 +1579,6 @@ theme_override_font_sizes/font_size = 46
 text = "quitter"
 horizontal_alignment = 1
 vertical_alignment = 1
-
-[node name="AnimationPlayer" type="AnimationPlayer" parent="Quitter"]
-libraries = {
-&"": SubResource("AnimationLibrary_cx6e3")
-}
 
 [connection signal="mouse_entered" from="Jouer" to="." method="_on_jouer_mouse_entered"]
 [connection signal="mouse_exited" from="Jouer" to="." method="_on_jouer_mouse_exited"]

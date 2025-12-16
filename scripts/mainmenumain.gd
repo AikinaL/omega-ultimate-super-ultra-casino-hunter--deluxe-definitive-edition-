@@ -145,7 +145,7 @@ func _on_quitter_pressed():
 	var parent_size = get_parent().size
 	var button_size = size 
 	randomX = random.randi_range(175, screensize.x - 175)
-	randomY = random.randi_range(45, screensize.y - 45)
+	randomY = random.randi_range(175, screensize.y - 175)
 	quitter.global_position = Vector2(randomX, randomY)
 
 func _on_quitter_mouse_entered():
