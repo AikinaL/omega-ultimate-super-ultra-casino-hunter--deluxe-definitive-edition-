@@ -924,7 +924,6 @@ grow_vertical = 2
 script = ExtResource("1_b7r8x")
 
 [node name="Background" type="AnimatedSprite2D" parent="."]
-visible = false
 position = Vector2(800, 450.00003)
 scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_xb0cx")
