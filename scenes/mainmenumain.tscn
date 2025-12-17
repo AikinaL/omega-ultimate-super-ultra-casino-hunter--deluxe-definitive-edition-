@@ -101,6 +101,7 @@
 [ext_resource type="Texture2D" uid="uid://bahq3ibkw84ij" path="res://assets/animation/image0096.png" id="98_gbxxn"]
 [ext_resource type="Texture2D" uid="uid://dnv0p4xtdodtf" path="res://assets/Animation bouton 1/image0000.png" id="99_5va85"]
 [ext_resource type="Texture2D" uid="uid://cp6rjigl2h7f4" path="res://assets/Animation bouton 2/image0000.png" id="99_amaqa"]
+[ext_resource type="Texture2D" uid="uid://sduvdajt5wbo" path="res://assets/Logo Titre.png" id="99_x5lwx"]
 [ext_resource type="Texture2D" uid="uid://bhwgk2vnscwr0" path="res://assets/Animation bouton 2/image0001.png" id="100_1w5yb"]
 [ext_resource type="Texture2D" uid="uid://d0s1gkcj1wip3" path="res://assets/Animation bouton 1/image0001.png" id="100_cgngg"]
 [ext_resource type="Texture2D" uid="uid://d4j35ytfymu25" path="res://assets/Animation bouton 2/image0002.png" id="101_ffkcq"]
@@ -497,6 +498,15 @@ animations = [{
 "name": &"default",
 "speed": 16.0
 }]
+
+[sub_resource type="Animation" id="Animation_x5lwx"]
+resource_name = "goofyahh"
+length = 2.0
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_b0wg4"]
+_data = {
+&"goofyahh": SubResource("Animation_x5lwx")
+}
 
 [sub_resource type="Animation" id="Animation_cx6e3"]
 length = 0.001
@@ -939,6 +949,16 @@ scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_xb0cx")
 autoplay = "default"
 
+[node name="LogoTitre" type="Sprite2D" parent="."]
+position = Vector2(804.00006, 310)
+scale = Vector2(0.6225, 0.6225)
+texture = ExtResource("99_x5lwx")
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="LogoTitre"]
+libraries = {
+&"": SubResource("AnimationLibrary_b0wg4")
+}
+
 [node name="Jouer" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
@@ -992,6 +1012,7 @@ offset_top = -1.5
 offset_bottom = 1.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "jouer"
@@ -1049,6 +1070,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "connexion"
@@ -1106,6 +1128,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "niveaux"
@@ -1163,6 +1186,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "high-score"
@@ -1220,6 +1244,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "boutique"
@@ -1277,6 +1302,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "chat public"
@@ -1348,6 +1374,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "réseaux"
@@ -1405,6 +1432,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "options"
@@ -1462,6 +1490,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "crédits"
@@ -1519,6 +1548,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "bonus"
@@ -1528,17 +1558,17 @@ vertical_alignment = 1
 [node name="Quitter" type="Button" parent="."]
 self_modulate = Color(1, 1, 1, 0)
 layout_mode = 1
-anchors_preset = 8
+anchors_preset = 7
 anchor_left = 0.5
-anchor_top = 0.5
+anchor_top = 1.0
 anchor_right = 0.5
-anchor_bottom = 0.5
+anchor_bottom = 1.0
 offset_left = -87.0
-offset_top = 261.0
+offset_top = -158.0
 offset_right = 87.0
-offset_bottom = 307.0
+offset_bottom = -112.0
 grow_horizontal = 2
-grow_vertical = 2
+grow_vertical = 0
 pivot_offset = Vector2(85, 25)
 
 [node name="AnimationPlayer" type="AnimationPlayer" parent="Quitter"]
@@ -1578,6 +1608,7 @@ offset_top = -1.5
 offset_bottom = 1.5
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_8tea2")
 theme_override_font_sizes/font_size = 46
 text = "quitter"

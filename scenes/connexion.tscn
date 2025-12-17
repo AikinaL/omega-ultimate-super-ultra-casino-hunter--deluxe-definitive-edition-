@@ -1,4 +1,4 @@
-[gd_scene load_steps=207 format=3 uid="uid://cvfyp2cuewptm"]
+[gd_scene load_steps=208 format=3 uid="uid://cvfyp2cuewptm"]
 
 [ext_resource type="Script" uid="uid://cs8g2yaqob7cr" path="res://scripts/connexion.gd" id="1_g58tc"]
 [ext_resource type="Texture2D" uid="uid://3fpgg78gh8fc" path="res://assets/animation/image0000.png" id="2_oywop"]
@@ -629,11 +629,40 @@ tracks/3/keys = {
 "values": [Color(1, 1, 1, 1), Color(1, 0.078431375, 0, 1), Color(0.81057715, 0.70969266, 0, 1), Color(0, 1, 0, 1), Color(8.6635355e-06, 0.9585524, 0.864414, 1), Color(0.16078432, 0, 0.8862745, 1), Color(1, 0.21176471, 0.9098039, 1), Color(1, 0, 0, 1), Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 0, 0, 1)]
 }
 
+[sub_resource type="Animation" id="Animation_0xec7"]
+resource_name = "whateveer"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.16666667, 0.6333333),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(0.32, 1), Vector2(1.0338461, 1), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.76666665, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(0, 0, 0, 1), Color(1, 1, 1, 0)]
+}
+
 [sub_resource type="AnimationLibrary" id="AnimationLibrary_0xec7"]
 _data = {
 &"RESET": SubResource("Animation_h7vyp"),
 &"color": SubResource("Animation_rwyvt"),
-&"strech": SubResource("Animation_05haw")
+&"strech": SubResource("Animation_05haw"),
+&"whateveer": SubResource("Animation_0xec7")
 }
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_oywop"]
@@ -974,6 +1003,7 @@ offset_right = 1039.0
 offset_bottom = 887.0
 scale = Vector2(1.5598083, 1)
 theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_05haw")
 theme_override_font_sizes/font_size = 50
 theme_override_styles/normal = SubResource("StyleBoxEmpty_05haw")
@@ -1043,6 +1073,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("196_05haw")
 theme_override_font_sizes/font_size = 46
 text = "retour"
@@ -1052,10 +1083,10 @@ vertical_alignment = 1
 [node name="Texte Editable" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 329.0
-offset_top = -67.0
-offset_right = 329.0
-offset_bottom = -67.0
+offset_left = 348.0
+offset_top = -166.0
+offset_right = 348.0
+offset_bottom = -166.0
 
 [node name="back" type="AnimatedSprite2D" parent="Texte Editable"]
 position = Vector2(795, 384.625)
@@ -1087,9 +1118,32 @@ offset_right = 1103.0
 offset_bottom = 492.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 2
 theme_override_fonts/font = ExtResource("196_05haw")
 theme_override_font_sizes/font_size = 72
 theme_override_styles/normal = SubResource("StyleBoxFlat_oywop")
-placeholder_text = "give info"
+placeholder_text = "tapez ici svp"
+
+[node name="Informations" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 634.00006
+offset_top = -113.0
+offset_right = 1664.0
+offset_bottom = 755.0
+scale = Vector2(1.5598083, 1)
+pivot_offset = Vector2(421.415, 30)
+theme_override_colors/font_color = Color(1, 1, 1, 1)
+theme_override_fonts/font = ExtResource("196_05haw")
+theme_override_font_sizes/font_size = 42
+text = "CES INFORMATIONS NE SONT PAS COREECTES"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="Informations"]
+libraries = {
+&"": SubResource("AnimationLibrary_0xec7")
+}
+autoplay = "whateveer"
 
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]

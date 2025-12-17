@@ -1,4 +1,4 @@
-[gd_scene load_steps=201 format=3 uid="uid://ch651nxn84o8w"]
+[gd_scene load_steps=217 format=3 uid="uid://ch651nxn84o8w"]
 
 [ext_resource type="Script" uid="uid://db7ffwabm5lwt" path="res://scripts/créditscréditables.gd" id="1_1urvc"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="2_1rgua"]
@@ -196,6 +196,18 @@
 [ext_resource type="Texture2D" uid="uid://c14d2gor5api8" path="res://assets/animation/image0095.png" id="97_qyavy"]
 [ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="98_c76ki"]
 [ext_resource type="Texture2D" uid="uid://bahq3ibkw84ij" path="res://assets/animation/image0096.png" id="98_dm8ay"]
+[ext_resource type="Texture2D" uid="uid://ilhm144lmx77" path="res://assets/Feu d_artifice/image0000.png" id="99_6k0o6"]
+[ext_resource type="Texture2D" uid="uid://csglcsk0nk7rh" path="res://assets/Feu d_artifice/image0001.png" id="100_s0okb"]
+[ext_resource type="Texture2D" uid="uid://b7ityos1yrb1j" path="res://assets/Feu d_artifice/image0002.png" id="101_ouqjf"]
+[ext_resource type="Texture2D" uid="uid://s2xrjbq2s7yh" path="res://assets/Feu d_artifice/image0003.png" id="102_kkocj"]
+[ext_resource type="Texture2D" uid="uid://dju75q5n5q88p" path="res://assets/Feu d_artifice/image0004.png" id="103_8tkox"]
+[ext_resource type="Texture2D" uid="uid://brlecf71pdhqo" path="res://assets/Feu d_artifice/image0005.png" id="104_pu2q3"]
+[ext_resource type="Texture2D" uid="uid://bnolc54r8sjgw" path="res://assets/Feu d_artifice/image0006.png" id="105_w0j0g"]
+[ext_resource type="Texture2D" uid="uid://b32x2bvufr6pk" path="res://assets/Feu d_artifice/image0007.png" id="106_6n16m"]
+[ext_resource type="Texture2D" uid="uid://0nj1jknd2ef8" path="res://assets/Feu d_artifice/image0008.png" id="107_6r5jd"]
+[ext_resource type="Texture2D" uid="uid://bmm12pdmihmd6" path="res://assets/Feu d_artifice/image0009.png" id="108_utdpu"]
+[ext_resource type="Texture2D" uid="uid://4eu0j8h0x0ep" path="res://assets/Feu d_artifice/image0010.png" id="109_6vcoe"]
+[ext_resource type="Texture2D" uid="uid://bxrj3rifkrn81" path="res://assets/Feu d_artifice/image0011.png" id="110_hyggv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bykcu"]
 animations = [{
@@ -495,6 +507,88 @@ animations = [{
 "name": &"default",
 "speed": 16.0
 }]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_owpbm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("99_6k0o6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_s0okb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ouqjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_kkocj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_8tkox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_pu2q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_w0j0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_6n16m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_6r5jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_utdpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_6vcoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_hyggv")
+}],
+"loop": true,
+"name": &"default",
+"speed": 12.0
+}]
+
+[sub_resource type="Animation" id="Animation_6k0o6"]
+resource_name = "scroll"
+length = 40.0
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Moi:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 39.966667),
+"transitions": PackedFloat32Array(1, 1),
+"update": 0,
+"values": [Vector2(-712, -183), Vector2(-712, -4503)]
+}
+
+[sub_resource type="Animation" id="Animation_s0okb"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath("Moi:position")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(-712, -183)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_ouqjf"]
+_data = {
+&"RESET": SubResource("Animation_s0okb"),
+&"scroll": SubResource("Animation_6k0o6")
+}
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_0t8tj"]
 animations = [{
@@ -823,6 +917,34 @@ scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_bykcu")
 autoplay = "default"
 
+[node name="feu artifice" type="AnimatedSprite2D" parent="."]
+position = Vector2(180.11108, 136)
+rotation = 0.2837572
+scale = Vector2(0.44074073, 0.44074073)
+sprite_frames = SubResource("SpriteFrames_owpbm")
+autoplay = "default"
+
+[node name="feu artifice2" type="AnimatedSprite2D" parent="."]
+position = Vector2(1394, 177)
+rotation = -0.28916824
+scale = Vector2(0.44074073, 0.44074073)
+sprite_frames = SubResource("SpriteFrames_owpbm")
+autoplay = "default"
+
+[node name="feu artifice3" type="AnimatedSprite2D" parent="."]
+position = Vector2(180.11108, 744)
+rotation = 0.2837572
+scale = Vector2(0.44074073, 0.44074073)
+sprite_frames = SubResource("SpriteFrames_owpbm")
+autoplay = "default"
+
+[node name="feu artifice4" type="AnimatedSprite2D" parent="."]
+position = Vector2(1394, 785)
+rotation = -0.28916824
+scale = Vector2(0.4407407, 0.4407407)
+sprite_frames = SubResource("SpriteFrames_owpbm")
+autoplay = "default"
+
 [node name="lesgenscool" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 8
@@ -830,8 +952,8 @@ anchor_left = 0.5
 anchor_top = 0.5
 anchor_right = 0.5
 anchor_bottom = 0.5
-offset_top = -8.0
-offset_bottom = -8.0
+offset_top = 656.0
+offset_bottom = 656.0
 grow_horizontal = 2
 grow_vertical = 2
 
@@ -840,75 +962,90 @@ layout_mode = 1
 anchors_preset = 15
 anchor_right = 1.0
 anchor_bottom = 1.0
-offset_left = -562.5
-offset_top = -160.5
-offset_right = 562.5
-offset_bottom = -111.5
+offset_left = -712.0
+offset_top = -183.0
+offset_right = 713.0
+offset_bottom = 3298.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("2_1rgua")
 theme_override_font_sizes/font_size = 46
-text = "Loubier Aaliyah - Game Designer, Programmation"
+text = "Loubier Aaliyah - Game Designer, Programmation
+Vialle Marine - Game Designer, 3D 
+Monterde Tona - Game Designer, Musique, SFX
+Grasseler Jami - Game Designer, Interfaces, Décor 2D, Artiste
+Derthezene Tristan - Game Designer, 3D, Décor
+Avec le financement de 
+SNJV
+SELL
+CIJV
+CNC
+France TV
+Hollywood
+CNRS
+NASA
+CIA
+NRA
+Coca Cola
+Red Bull
+ChatGPT
+Appel
+Google
+BitCoin
+Eterum
+Peugeot
+Toyota
+Tesla
+SNCF
+ADIDAS  
+Youtube
+Lego
+ EDF
+Kodak
+HP
+MSI
+Nvidia
+Wayne Corp
+Club Penguin
+Rolls Royce
+Dior
+Louis Vuitton
+Channel
+Bugatti
+Rolex
+Monsanto
+IBM
+DELL
+Unilever
+Carrefour
+Stark Industries
+XHamster
+RedTube
+Paul Valery
+Umbrella Corporation
+Dinoco
+Durex
+Volvic
+Logitech
+PSG
+OM 
+Monte-Carlo
+Albert II de Monaco
+NordVPN
+LVMH
+Militech
+Arasaka
+OnlyFan
+(tout droit réservé)"
+horizontal_alignment = 1
 
-[node name="Marine" type="Label" parent="lesgenscool"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -391.0
-offset_top = -96.5
-offset_right = 391.0
-offset_bottom = -47.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_1rgua")
-theme_override_font_sizes/font_size = 46
-text = "Vialle Marine - Game Designer, 3D "
-
-[node name="Tona" type="Label" parent="lesgenscool"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -516.0
-offset_top = -32.5
-offset_right = 516.0
-offset_bottom = 16.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_1rgua")
-theme_override_font_sizes/font_size = 46
-text = "Monterde Tona - Game Designer, Musique, SFX"
-
-[node name="Jami" type="Label" parent="lesgenscool"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -712.5
-offset_top = 31.5
-offset_right = 712.5
-offset_bottom = 80.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_1rgua")
-theme_override_font_sizes/font_size = 46
-text = "Grasseler Jami - Game Designer, Interfaces, Décor 2D, Artiste"
-
-[node name="Tristan" type="Label" parent="lesgenscool"]
-layout_mode = 1
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
-offset_left = -535.0
-offset_top = 95.5
-offset_right = 535.0
-offset_bottom = 144.5
-grow_horizontal = 2
-grow_vertical = 2
-theme_override_fonts/font = ExtResource("2_1rgua")
-theme_override_font_sizes/font_size = 46
-text = "Derthezene Tristan - Game Designer, 3D, Décor"
+[node name="AnimationPlayer" type="AnimationPlayer" parent="."]
+root_node = NodePath("../lesgenscool")
+libraries = {
+&"": SubResource("AnimationLibrary_ouqjf")
+}
+autoplay = "scroll"
 
 [node name="Retour" type="Button" parent="."]
 layout_mode = 1
@@ -954,6 +1091,7 @@ anchor_right = 1.0
 anchor_bottom = 1.0
 grow_horizontal = 2
 grow_vertical = 2
+theme_override_constants/outline_size = 8
 theme_override_fonts/font = ExtResource("2_1rgua")
 theme_override_font_sizes/font_size = 46
 text = "retour"
