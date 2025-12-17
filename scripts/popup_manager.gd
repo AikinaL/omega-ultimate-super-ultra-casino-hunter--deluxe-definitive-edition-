@@ -43,14 +43,14 @@ func spawn_popups_loop() -> void:
 		await get_tree().process_frame
 
 		# Now we can safely get popup size
-		var popup_size = active_popup.get_size()
+		#var popup_size = active_popup.get_size()
 		var parent_size = parent.get_size()
 
-		# Randomize position fully on screen
+		 #Randomize position fully on screen
 		var random_pos = Vector2(
-			randf_range(0, parent_size.x - popup_size.x),
-			randf_range(0, parent_size.y - popup_size.y)
-		)
+			randf_range(200, parent_size.x -200),
+			randf_range(200, parent_size.y - 200))
+		
 		active_popup.position = random_pos
 
 		active_popup.set_text(texts.pick_random())
