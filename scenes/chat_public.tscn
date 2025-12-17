@@ -1,4 +1,4 @@
-[gd_scene load_steps=220 format=3 uid="uid://b5s1jte8kw0o6"]
+[gd_scene load_steps=231 format=3 uid="uid://b5s1jte8kw0o6"]
 
 [ext_resource type="Script" uid="uid://beya4yavv0lph" path="res://scripts/chat_public.gd" id="1_dkiko"]
 [ext_resource type="Texture2D" uid="uid://cp6rjigl2h7f4" path="res://assets/Animation bouton 2/image0000.png" id="2_c8yy6"]
@@ -211,6 +211,7 @@
 [ext_resource type="Texture2D" uid="uid://d2k0mb0cr3406" path="res://assets/Cercle animé/image0012.png" id="111_i4415"]
 [ext_resource type="Texture2D" uid="uid://c0eskcd6shehg" path="res://assets/Cercle animé/image0013.png" id="112_fybxu"]
 [ext_resource type="Texture2D" uid="uid://bqdv5auntxwsn" path="res://assets/Cercle animé/image0014.png" id="113_miro7"]
+[ext_resource type="AudioStream" uid="uid://7cofmr67g816" path="res://assets/Sound/SFX/boo-sfx.mp3" id="212_p3fkx"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_pjacb"]
 animations = [{
@@ -602,6 +603,76 @@ _data = {
 &"scrolling eh ouais": SubResource("Animation_x65w6")
 }
 
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_x65w6"]
+texture = ExtResource("98_7cpmg")
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_x65w6"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_p3fkx"]
+
+[sub_resource type="StyleBoxEmpty" id="StyleBoxEmpty_28lih"]
+
+[sub_resource type="Animation" id="Animation_28lih"]
+resource_name = "meow"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.5, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(2, 2), Vector2(1, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.49, 1),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 1, 0, 1), Color(1, 1, 1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_agco2"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:scale")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(2, 2)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:theme_override_colors/font_color")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 1, 0, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_207l2"]
+_data = {
+&"RESET": SubResource("Animation_agco2"),
+&"meow": SubResource("Animation_28lih")
+}
+
 [sub_resource type="SpriteFrames" id="SpriteFrames_t5aws"]
 animations = [{
 "frames": [{
@@ -914,6 +985,67 @@ animations = [{
 "speed": 12.0
 }]
 
+[sub_resource type="Animation" id="Animation_207l2"]
+resource_name = "wwwww"
+loop_mode = 1
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0, 0.7, 0.8666667),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Color(1, 1, 1, 1), Color(1, 0, 0, 1), Color(0, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0, 0.56666666, 0.93333334),
+"transitions": PackedFloat32Array(1, 1, 1),
+"update": 0,
+"values": [Vector2(1, 1), Vector2(1.5, 1), Vector2(1, 1)]
+}
+
+[sub_resource type="Animation" id="Animation_b4g13"]
+length = 0.001
+tracks/0/type = "value"
+tracks/0/imported = false
+tracks/0/enabled = true
+tracks/0/path = NodePath(".:theme_override_colors/font_color")
+tracks/0/interp = 1
+tracks/0/loop_wrap = true
+tracks/0/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Color(1, 0, 0, 1)]
+}
+tracks/1/type = "value"
+tracks/1/imported = false
+tracks/1/enabled = true
+tracks/1/path = NodePath(".:scale")
+tracks/1/interp = 1
+tracks/1/loop_wrap = true
+tracks/1/keys = {
+"times": PackedFloat32Array(0),
+"transitions": PackedFloat32Array(1),
+"update": 0,
+"values": [Vector2(1.5, 1)]
+}
+
+[sub_resource type="AnimationLibrary" id="AnimationLibrary_38cls"]
+_data = {
+&"RESET": SubResource("Animation_b4g13"),
+&"wwwww": SubResource("Animation_207l2")
+}
+
 [node name="ChatPublic" type="Control"]
 layout_mode = 3
 anchors_preset = 15
@@ -929,42 +1061,44 @@ scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_pjacb")
 autoplay = "default"
 
-[node name="cercles" type="AnimatedSprite2D" parent="."]
+[node name="Node" type="Node2D" parent="."]
+
+[node name="cercles" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(132, 143)
 scale = Vector2(1.52, 1.52)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
 autoplay = "default"
 
-[node name="cercles2" type="AnimatedSprite2D" parent="."]
+[node name="cercles2" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(1455, 249)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
 autoplay = "default"
 
-[node name="cercles3" type="AnimatedSprite2D" parent="."]
+[node name="cercles3" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(203, 731)
 scale = Vector2(2.93, 2.93)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
 autoplay = "default"
 
-[node name="cercles4" type="AnimatedSprite2D" parent="."]
+[node name="cercles4" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(986.74994, 595.74994)
 scale = Vector2(2.93, 2.93)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
 autoplay = "default"
 
-[node name="cercles5" type="AnimatedSprite2D" parent="."]
+[node name="cercles5" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(987.74994, 591.74994)
 scale = Vector2(11.834999, 11.834999)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
 autoplay = "default"
 
-[node name="cercles6" type="AnimatedSprite2D" parent="."]
+[node name="cercles6" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(204, 729.99994)
 scale = Vector2(6.5950003, 6.5950003)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
 autoplay = "default"
 
-[node name="cercles7" type="AnimatedSprite2D" parent="."]
+[node name="cercles7" type="AnimatedSprite2D" parent="Node"]
 position = Vector2(515, 353)
 scale = Vector2(13.256874, 13.256874)
 sprite_frames = SubResource("SpriteFrames_3u6ed")
@@ -1006,6 +1140,72 @@ libraries = {
 &"": SubResource("AnimationLibrary_28lih")
 }
 autoplay = "scrolling eh ouais"
+
+[node name="ColorRect" type="ColorRect" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 537.0
+offset_top = 312.0
+offset_right = -535.0
+offset_bottom = -308.0
+grow_horizontal = 2
+grow_vertical = 2
+color = Color(1, 1, 0.3372549, 0.5411765)
+
+[node name="Panel" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+offset_left = 537.0
+offset_top = 312.0
+offset_right = -531.0
+offset_bottom = -301.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_x65w6")
+
+[node name="pay box" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -263.0
+offset_top = -138.0
+offset_right = 263.0
+offset_bottom = 138.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/normal = SubResource("StyleBoxEmpty_x65w6")
+theme_override_styles/pressed = SubResource("StyleBoxEmpty_p3fkx")
+theme_override_styles/hover = SubResource("StyleBoxEmpty_28lih")
+
+[node name="Label" type="Label" parent="pay box"]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+scale = Vector2(2, 2)
+pivot_offset = Vector2(275, 130)
+theme_override_colors/font_color = Color(1, 1, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("99_msduk")
+theme_override_font_sizes/font_size = 50
+text = "Payer"
+horizontal_alignment = 1
+vertical_alignment = 1
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="pay box/Label"]
+libraries = {
+&"": SubResource("AnimationLibrary_207l2")
+}
+autoplay = "meow"
 
 [node name="Retour" type="Button" parent="."]
 layout_mode = 1
@@ -1058,4 +1258,29 @@ text = "retour"
 horizontal_alignment = 1
 vertical_alignment = 1
 
+[node name="troppauvre" type="Label" parent="."]
+visible = false
+layout_mode = 0
+offset_left = 410.0
+offset_top = 242.0
+offset_right = 1209.0
+offset_bottom = 300.0
+scale = Vector2(1.5, 1)
+pivot_offset = Vector2(400, 25)
+theme_override_colors/font_color = Color(1, 0, 0, 1)
+theme_override_constants/outline_size = 8
+theme_override_fonts/font = ExtResource("99_msduk")
+theme_override_font_sizes/font_size = 54
+text = "tu es bien trop pauvre #loser"
+
+[node name="AnimationPlayer" type="AnimationPlayer" parent="troppauvre"]
+libraries = {
+&"": SubResource("AnimationLibrary_38cls")
+}
+autoplay = "wwwww"
+
+[node name="booh" type="AudioStreamPlayer" parent="."]
+stream = ExtResource("212_p3fkx")
+
+[connection signal="pressed" from="pay box" to="." method="_on_pay_box_pressed"]
 [connection signal="pressed" from="Retour" to="." method="_on_retour_pressed"]
