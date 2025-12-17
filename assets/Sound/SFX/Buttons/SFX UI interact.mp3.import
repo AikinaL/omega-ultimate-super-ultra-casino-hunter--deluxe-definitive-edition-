@@ -1,0 +1,19 @@
+[remap]
+
+importer="mp3"
+type="AudioStreamMP3"
+uid="uid://cdbqgbxdg8785"
+path="res://.godot/imported/SFX UI interact.mp3-fa5ded7165641b17cdb0a1f48d6fc559.mp3str"
+
+[deps]
+
+source_file="res://assets/Sound/SFX/Buttons/SFX UI interact.mp3"
+dest_files=["res://.godot/imported/SFX UI interact.mp3-fa5ded7165641b17cdb0a1f48d6fc559.mp3str"]
+
+[params]
+
+loop=false
+loop_offset=0
+bpm=0
+beat_count=0
+bar_beats=4
