@@ -1052,10 +1052,10 @@ vertical_alignment = 1
 [node name="Texte Editable" type="Control" parent="."]
 layout_mode = 1
 anchors_preset = 0
-offset_left = 329.0
-offset_top = -67.0
-offset_right = 329.0
-offset_bottom = -67.0
+offset_left = 348.0
+offset_top = -134.0
+offset_right = 348.0
+offset_bottom = -134.0
 
 [node name="back" type="AnimatedSprite2D" parent="Texte Editable"]
 position = Vector2(795, 384.625)
