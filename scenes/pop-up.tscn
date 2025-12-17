@@ -1,12 +1,17 @@
 [gd_scene load_steps=2 format=3 uid="uid://c4upswid8a5gx"]
 
-[ext_resource type="Script" uid="uid://w6mqpfm2jmvw" path="res://scripts/pop_up.gd" id="1_qfqc1"]
+[ext_resource type="Script" path="res://scripts/pop_up.gd" id="1_qfqc1"]
 
 [node name="Control" type="Control"]
 layout_mode = 3
-anchors_preset = 15
-anchor_right = 1.0
-anchor_bottom = 1.0
+anchor_left = 0.30800003
+anchor_top = 0.33100003
+anchor_right = 0.69500005
+anchor_bottom = 0.739
+offset_left = 307.19995
+offset_top = 152.09998
+offset_right = -312.00012
+offset_bottom = -215.10004
 grow_horizontal = 2
 grow_vertical = 2
 pivot_offset = Vector2(800, 450)
