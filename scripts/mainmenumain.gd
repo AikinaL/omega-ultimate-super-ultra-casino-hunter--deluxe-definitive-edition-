@@ -142,10 +142,10 @@ func _on_bonus_pressed():
 
 #region Quitter
 func _on_quitter_pressed():
-	var parent_size = get_parent().size
-	var button_size = size 
-	randomX = random.randi_range(175, screensize.x - 175)
-	randomY = random.randi_range(175, screensize.y - 175)
+	#var parent_size = get_parent().size
+	#var button_size = size 
+	randomX = random.randi_range(550, screensize.x - 550)
+	randomY = random.randi_range(550, screensize.y - 550)
 	quitter.global_position = Vector2(randomX, randomY)
 
 func _on_quitter_mouse_entered():
