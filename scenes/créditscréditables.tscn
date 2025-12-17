@@ -1,4 +1,4 @@
-[gd_scene load_steps=201 format=3 uid="uid://ch651nxn84o8w"]
+[gd_scene load_steps=214 format=3 uid="uid://ch651nxn84o8w"]
 
 [ext_resource type="Script" uid="uid://db7ffwabm5lwt" path="res://scripts/créditscréditables.gd" id="1_1urvc"]
 [ext_resource type="FontFile" uid="uid://b74rbuabrv41r" path="res://assets/Le Casino Royale.otf" id="2_1rgua"]
@@ -196,6 +196,18 @@
 [ext_resource type="Texture2D" uid="uid://c14d2gor5api8" path="res://assets/animation/image0095.png" id="97_qyavy"]
 [ext_resource type="Texture2D" uid="uid://c6a3wfcmfqlbi" path="res://assets/Cadre bouton.png" id="98_c76ki"]
 [ext_resource type="Texture2D" uid="uid://bahq3ibkw84ij" path="res://assets/animation/image0096.png" id="98_dm8ay"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0000.png" id="99_6k0o6"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0001.png" id="100_s0okb"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0002.png" id="101_ouqjf"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0003.png" id="102_kkocj"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0004.png" id="103_8tkox"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0005.png" id="104_pu2q3"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0006.png" id="105_w0j0g"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0007.png" id="106_6n16m"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0008.png" id="107_6r5jd"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0009.png" id="108_utdpu"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0010.png" id="109_6vcoe"]
+[ext_resource type="Texture2D" path="res://assets/AnimationFeuArtifice/image0011.png" id="110_hyggv"]
 
 [sub_resource type="SpriteFrames" id="SpriteFrames_bykcu"]
 animations = [{
@@ -493,6 +505,91 @@ animations = [{
 }],
 "loop": true,
 "name": &"default",
+"speed": 16.0
+}]
+
+[sub_resource type="SpriteFrames" id="SpriteFrames_owpbm"]
+animations = [{
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("99_6k0o6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_s0okb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ouqjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_kkocj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_8tkox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_pu2q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_w0j0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_6n16m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_6r5jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_utdpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_6vcoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_hyggv")
+}],
+"loop": true,
+"name": &"feu",
+"speed": 16.0
+}, {
+"frames": [{
+"duration": 1.0,
+"texture": ExtResource("99_6k0o6")
+}, {
+"duration": 1.0,
+"texture": ExtResource("100_s0okb")
+}, {
+"duration": 1.0,
+"texture": ExtResource("101_ouqjf")
+}, {
+"duration": 1.0,
+"texture": ExtResource("102_kkocj")
+}, {
+"duration": 1.0,
+"texture": ExtResource("103_8tkox")
+}, {
+"duration": 1.0,
+"texture": ExtResource("104_pu2q3")
+}, {
+"duration": 1.0,
+"texture": ExtResource("105_w0j0g")
+}, {
+"duration": 1.0,
+"texture": ExtResource("106_6n16m")
+}, {
+"duration": 1.0,
+"texture": ExtResource("107_6r5jd")
+}, {
+"duration": 1.0,
+"texture": ExtResource("108_utdpu")
+}, {
+"duration": 1.0,
+"texture": ExtResource("109_6vcoe")
+}, {
+"duration": 1.0,
+"texture": ExtResource("110_hyggv")
+}],
+"loop": true,
+"name": &"feu2",
 "speed": 16.0
 }]
 
@@ -822,6 +919,14 @@ position = Vector2(800, 450.00003)
 scale = Vector2(0.8333333, 0.8333333)
 sprite_frames = SubResource("SpriteFrames_bykcu")
 autoplay = "default"
+
+[node name="AnimatedSprite2D2" type="AnimatedSprite2D" parent="."]
+position = Vector2(805, 454.00003)
+scale = Vector2(0.8333333, 0.8333333)
+sprite_frames = SubResource("SpriteFrames_owpbm")
+animation = &"feu2"
+autoplay = "feu2"
+frame_progress = 0.83888334
 
 [node name="lesgenscool" type="Control" parent="."]
 layout_mode = 1
