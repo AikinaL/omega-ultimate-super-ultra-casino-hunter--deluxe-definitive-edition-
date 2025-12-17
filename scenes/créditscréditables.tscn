@@ -918,28 +918,28 @@ sprite_frames = SubResource("SpriteFrames_bykcu")
 autoplay = "default"
 
 [node name="feu artifice" type="AnimatedSprite2D" parent="."]
-position = Vector2(236.11108, 136)
+position = Vector2(180.11108, 136)
 rotation = 0.2837572
 scale = Vector2(0.44074073, 0.44074073)
 sprite_frames = SubResource("SpriteFrames_owpbm")
 autoplay = "default"
 
 [node name="feu artifice2" type="AnimatedSprite2D" parent="."]
-position = Vector2(1450, 177)
+position = Vector2(1394, 177)
 rotation = -0.28916824
 scale = Vector2(0.44074073, 0.44074073)
 sprite_frames = SubResource("SpriteFrames_owpbm")
 autoplay = "default"
 
 [node name="feu artifice3" type="AnimatedSprite2D" parent="."]
-position = Vector2(236.11108, 744)
+position = Vector2(180.11108, 744)
 rotation = 0.2837572
 scale = Vector2(0.44074073, 0.44074073)
 sprite_frames = SubResource("SpriteFrames_owpbm")
 autoplay = "default"
 
 [node name="feu artifice4" type="AnimatedSprite2D" parent="."]
-position = Vector2(1450, 785)
+position = Vector2(1394, 785)
 rotation = -0.28916824
 scale = Vector2(0.4407407, 0.4407407)
 sprite_frames = SubResource("SpriteFrames_owpbm")
